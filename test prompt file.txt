@@ -1,0 +1,26 @@
+--prompt "piggy enemy"
+--negative_prompt "dog"
+--steps 7
+--width 512
+--height 768
+--batch_size 2
+--sd_model zavychromaxl_v100
+--sampler_name "DPM++ 3M SDE"
+--seed_resize_from_w  512
+--seed_resize_from_h 512
+--subseed_strength 0.06
+--subseed 4
+--seed 1
+
+--prompt "bro-simmon"
+--negative_prompt "blue"
+--steps 7
+--width 512
+--height 768
+--batch_size 2
+--sampler_name "DPM++ 2M Karras"
+--seed_resize_from_w  512
+--seed_resize_from_h 512
+--subseed_strength 0.06
+--subseed 4
+--seed 1
