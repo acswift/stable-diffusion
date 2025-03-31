@@ -7,9 +7,12 @@
 
 ### Prompt from a File
 
-Unfortunately, it looks like the file has to be uploaded — I was hoping I could have a file on disk that I modify as needed while SD continues to operate in the background.
+This (for me) turned out to be a dead end:
 
-Unfortunately also, it does not seem to be able to handle ADetailer or upscaling.
+- the file has to be uploaded (I was hoping to use a file on disk that is read each time while SD continues to operate in the background)
+- it does not seem to be able to handle ADetailer or upscaling.
+
+![](images/divider.jpg)
 
 The prompts in the file will be added at the **start** or **end** of the prompts entered in the main prompt text field (so empty the main text field if you want prompts to come only from the text file).
 
@@ -17,13 +20,11 @@ Once uploaded, the prompts are available to modify in the field labeled "List of
 
 1. under the **Script** menu at the bottom of the page, select **Prompts from file or textbox**.
 
-2. enter one prompt per line
-
-It's probably easiest to do it all on separate lines, then remove the `CR` characters at the end
+2. enter one prompt per line. It's easiest to put each parameter on a separate lines and delete the `return` characters when you're done
 
 ![](images/divider.jpg)
 
-From [this page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/248), there is a list of possible parameters:
+[list of possible parameters](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/248):
 
 - sd_model
 - outpath_samples
@@ -54,7 +55,7 @@ From [this page](https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/
 
 ![](images/divider.jpg)
 
-### resources
+### Links
 
 - https://www.reddit.com/r/StableDiffusion/comments/y2ohu9/guide_for_prompts_from_file_automatic1111/
 - https://github.com/AUTOMATIC1111/stable-diffusion-webui/discussions/7740
