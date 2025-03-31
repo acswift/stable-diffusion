@@ -3,7 +3,7 @@
 *Updated 31 March, 2025 · Toulouse*
 
 
-![](images/divider.jpg)
+!(images/divider.jpg)
 
 stable-diffusion
 
