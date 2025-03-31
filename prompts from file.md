@@ -28,7 +28,13 @@ Once uploaded, the prompts are available to modify in the field labeled `List of
 
 The script `prompts_from_file.py` is in `stable-diffusion-webui/scripts`.
 
-It sort of looks like you could just add in the parameters that are not missing, but that's for another day.
+It sort of looks like you could just add in the parameters that are not missing. Here's the data accompanying a sci-fi image:
+```
+parameters
+a rocky dusty landscape on an alien planet
+Negative prompt: boring, plain
+Steps: 30, Sampler: DPM++ 3M SDE, Schedule type: Karras, CFG scale: 5, Seed: 2928875613, Size: 1024x768, Model hash: ff5b69c9a1, Model: zavychromaxl_v100, VAE hash: 235745af8d, VAE: fixFP16ErrorsSDXLLowerMemoryUse_v10.safetensors, Version: v1.10.1
+```
 
 <details><summary>file contents</summary>
 
