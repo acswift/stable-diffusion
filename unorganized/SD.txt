@@ -1,0 +1,81 @@
+https://aituts.com/stable-diffusion-mac-m1/
+
+
+
+
+https://noiselith.com
+oops 32GB ram required
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# https://uxplanet.org/install-stable-diffusion-ui-on-mac-beginners-guide-351e40a9e8e2
+
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+I added the suggested commands (output by the script) to ~/.profile
+
+$ brew install cmake protobuf rust python@3.10 git wget
+
+no apparent errors
+
+—————————— MEANTIME
+
+from this page: https://www.cloudbooklet.com/best-stable-diffusion-models/
+
+I choose model "ModelShoot" and download it: https://huggingface.co/wavymulder/modelshoot (2.13 GB)
+
+—————————— END MEANTIME
+
+$ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+
+no apparent errors
+
+When the model is done downloading, place it in the “stable-diffusion-webui > models > Stable-diffusion” folder.
+
+$ cd ~/sta* && ./webui.sh
+
+—————————— steps
+
+https://huggingface.co/wavymulder/modelshoot/resolve/main/parameters_for_samples.txt
+
+
+—————————— debugging
+
+If you have an old version (3.8) of python installed and run the ./webui.sh before updating to 3.10 or more, the scirpt will fail even if you update python later. In this case you need to re-clone.
+
+—————————— notes
+
+
+[notice] A new release of pip is available: 23.3.1 -> 23.3.2
+[notice] To update, run: pip install --upgrade pip
+
+
+Warning: caught exception 'Torch not compiled with CUDA enabled', memory monitor disabled
+

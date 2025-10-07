@@ -1,0 +1,3 @@
+Moving an embedding from the beginning to the end of a negative prompt made a huge difference in the output.
+
+More research needed.

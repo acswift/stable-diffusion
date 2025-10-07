@@ -1,0 +1,46 @@
+new notes
+
+      dilate: adjusts the frame
+        blur: INSIDE the frame, so it does NOT make the frame bigger
+mask padding: 
+
+add some padding around the masked areas before inpainting them
+It is a value between 0 and 256 that represents the number of pixels to add around the masks
+
+8 8 72 seems like a good amount. the dilate and blur should be the same
+large blur values cause shadowed chins (for example)
+
+
+
+———————————————————————————————————————— 
+
+0.65 is a good limit for weirdly-positioned faces
+
+dilation 32  54US
+mask blur 32  54US
+masked padding 80  136US
+denoising strength 0.5
+
+US = if upscaled
+
+seems to works with difficult head positions
+
+1. mask blur alone reduces the size of the fact
+2. so need dilation
+3. masked padding is difficult to understand. It increases the size of the face while blurring it with the background. it might be better to think of it as mask enlargement (padding the area that is masked?)
+
+mask preprocessing —› dilation
+— simple: increases the size of the area that is treated
+
+inpainting —› mask blur
+— simple: blurs the edges of the mask BUT reduces subject size to fit in blur
+
+inpainting —› mask padding
+
+"add some padding around the masked areas before inpainting them. It is a value between 0 and 256 that represents the number of pixels to add around the masks."
+
+———————————————————————————————————————— upscaling
+
+the numbers that work for non-upscaled images do not work with upscaled images
+
+so test

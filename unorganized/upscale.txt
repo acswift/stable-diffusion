@@ -1,0 +1,11 @@
+enable upscale in prefs
+
+limit JPG size to 5000
+set quality to 95%
+
+in params set upscale 4x, but it will just be limited by the 5000 next to it
+
+
+4xUltrasharp gives best faces
+double dilation, mask blur, masked padding (adetailer runs after upscaling)
+64 64 64 seems to work well

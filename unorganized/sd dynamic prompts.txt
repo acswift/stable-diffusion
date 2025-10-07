@@ -1,0 +1,22 @@
+https://github.com/adieyal/sd-dynamic-prompts
+install from URL
+
+
+
+manual:
+https://github.com/adieyal/sd-dynamic-prompts/blob/main/docs/SYNTAX.md
+
+
+
+Using this script, the prompt:
+
+A {house|apartment|lodge|cottage} in {summer|winter|autumn|spring} by {2$$artist1|artist2|artist3}
+Will produce any of the following prompts:
+
+A house in summer by artist1, artist2
+A lodge in autumn by artist3, artist1
+A cottage in winter by artist2, artist3
+...
+This is especially useful if you are searching for interesting combinations of artists and styles.
+
+You can also pick a random string from a file. Assuming you have the file seasons.txt in WILDCARD_DIR (see below), then:

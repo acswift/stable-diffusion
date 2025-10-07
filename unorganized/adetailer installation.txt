@@ -1,0 +1,6 @@
+https://www.reddit.com/r/StableDiffusion/comments/18zi2s8/complete_guide_on_how_to_use_adetailer_after/
+
+install from url
+https://github.com/Bing-su/adetailer.git
+
+got to installed › apply and restart UI

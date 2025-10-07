@@ -1,0 +1,150 @@
+
+/* vim: set foldmethod=marker fmr=/*\—,/**\/: */
+
+/*:::::::::::::::::::::::::::::::::::::::: user.css */
+
+/*———————————————————————————————————————— hide pnginfo */
+
+div#pnginfo_image img{
+  opacity:0.1;
+  rotate:90deg;
+  /* filter: invert(1); */
+}
+/**/
+/*———————————————————————————————————————— colors */
+
+:root {
+        --red    :hsl(  0, 100%, 83%);
+        --orange :hsl( 30, 100%, 80%);
+        --yellow :hsl( 60, 100%, 80%);
+        --green  :hsl(120, 100%, 80%);
+        --blue   :hsl(210, 100%, 80%);
+        --purple :hsl(240, 100%, 88%);
+        --pink   :hsl(300, 100%, 83%); }
+/**/
+/*———————————————————————————————————————— form elements */
+
+:root{
+         --generate:var(   --orange   );
+    --generateHover:var(   --blue     );
+        --interrupt:var(   --red      );
+   --interruptHover:var(   --blue     );
+     --interrupting:var(   --purple   );
+--interruptingHover:var(   --blue     );
+             --skip:var(   --blue     );
+        --skipHover:var(   --green    );
+
+           --prompt:var(   --green    );
+        --promptNeg:var(   --pink     );
+   --samplingMethod:var(   --orange   );
+        --scheduler:var(   --yellow   );
+            --steps:var(   --orange   );
+         --hiResFix:var(   --blue     );
+          --refiner:var(   --purple   );
+             --seed:var(   --green    );
+            --width:var(   --green    );
+           --height:var(   --green    );
+              --cfg:var(   --orange   );
+              --vae:var(   --red      );
+          --upscale:var(   --orange   );
+   
+        --aDetailer:var(   --purple   );
+      --ADdetection:var(   --yellow   );
+           --ADmask:var(   --orange   );
+     --ADinpainting:var(   --blue     );
+     --ADcontrolNet:var(   --pink     );
+
+}
+/**/
+/*———————————————————————————————————————— main button */
+
+div#txt2img_generate_box button{
+  background-image:none; /* get rid of gradient */
+  color:#444;
+  border:1px solid #999;
+}
+
+div#txt2img_generate_box button#txt2img_generate          { background-color:var( --generate          );}
+div#txt2img_generate_box button#txt2img_generate:hover    { background-color:var( --generateHover     );}
+
+div#txt2img_generate_box button#txt2img_interrupt         { background-color:var( --interrupt         );}
+div#txt2img_generate_box button#txt2img_interrupt:hover   { background-color:var( --interruptHover    );}
+
+div#txt2img_generate_box button#txt2img_interrupting      { background-color:var( --interrupting      );}
+div#txt2img_generate_box button#txt2img_interrupting:hover{ background-color:var( --interruptingHover );}
+
+div#txt2img_generate_box button#txt2img_skip              { background-color:var( --skip              );}
+div#txt2img_generate_box button#txt2img_skip:hover        { background-color:var( --skipHover         );}
+
+/**/
+/*———————————————————————————————————————— settings */
+
+                    /*   prompt            */div#txt2img_prompt label textarea   
+{background-color:var(   --prompt );}
+
+                    /*   negative          */div#txt2img_neg_prompt label textarea
+{background-color:var(   --promptNeg            );}
+
+                    /*   sampling method   */div#txt2img_sampling .wrap.svelte-1xsj8nn.svelte-1xsj8nn.svelte-1xsj8nn
+{background-color:var(   --samplingMethod          );}
+
+                    /*   scheduler         */div#txt2img_scheduler .wrap.svelte-1xsj8nn.svelte-1xsj8nn.svelte-1xsj8nn 
+{background-color:var(   --scheduler          );}
+
+                    /*   steps             */div#txt2img_steps input 
+{background-color:var(   --steps          );}
+
+                    /*   hi-res fix        */div#txt2img_hr
+{background-color:var(   --hiResFix            );}
+
+                    /*   refiner           */div#txt2img_enable
+{background-color:var(   --refiner          );}
+
+                    /*   seed              */input[type=number].svelte-pjtc3.svelte-pjtc3
+{background-color:var(   --seed           );}
+
+                    /*   width             */div#txt2img_width input 
+{background-color:var(   --width           );}
+
+                    /*   height            */div#txt2img_height input 
+{background-color:var(   --height           );}
+
+                    /*   CFG               */div#txt2img_cfg_scale input 
+{background-color:var(   --cfg          );}
+
+                    /*   VAE               */div#setting_sd_vae div.wrap.svelte-1xsj8nn.svelte-1xsj8nn.svelte-1xsj8nn 
+{background-color:var(   --vae             );}
+
+                    /*   upscale           */div#extras_upscale
+{background-color:var(   --upscale         );}
+
+                    /*   adetailer         */div#script_txt2img_adetailer_ad_main_accordion
+{background-color:var(   --adetailer          );}
+
+/*  batch count      */div#txt2img_batch_count input { }
+/*  batch size       */div#txt2img_batch_size  input { }
+/**/
+/*———————————————————————————————————————— adetailer */
+
+#script_txt2img_adetailer_ad_detection_accordion_3rd,
+#script_txt2img_adetailer_ad_detection_accordion_2nd,
+#script_txt2img_adetailer_ad_detection_accordion
+{background-color:var( --ADdetection );}
+
+#script_txt2img_adetailer_ad_mask_preprocessing_accordion_3rd,
+#script_txt2img_adetailer_ad_mask_preprocessing_accordion_2nd,
+#script_txt2img_adetailer_ad_mask_preprocessing_accordion
+{background-color:var( -- ADmask );}
+
+#script_txt2img_adetailer_ad_inpainting_accordion_3rd,
+#script_txt2img_adetailer_ad_inpainting_accordion_2nd,
+#script_txt2img_adetailer_ad_inpainting_accordion
+{background-color:var( --ADinpainting );}
+
+#component-247,
+#script_txt2img_adetailer_ad_controlnet_model
+{background-color:var( --ADcontrolNet );}
+/**/
+
+/*:::::::::::::::::::::::::::::::::::::::: fin */
+

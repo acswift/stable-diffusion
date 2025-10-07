@@ -1,0 +1,10 @@
+a1111 notes
+
+[prompt1:prompt2:whentoswitch]
+whentoswitch = n° or steps or 0-1 percent
+[addedprompt:whentoadd]
+[removedprompt::whentoremove]
+
+
+· · ·
+

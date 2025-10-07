@@ -1,0 +1,4 @@
+where you put the keyword in the prompt makes a big difference.
+
+putting it last makes it much less important
+putting it first makes it much more important

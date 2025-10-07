@@ -1,0 +1,1 @@
+--prompt "rocky planet" --negative_prompt "trees" --steps 20  --width 1024 --height 768 --batch_size 1 --cfg_scale 5.0 --sd_model "zavychromaxl_v100" --sampler_name "DPM++ 3M SDE" --seed_resize_from_w  512 --seed_resize_from_h 512 --subseed_strength 0.06 --subseed 4 --seed 1 

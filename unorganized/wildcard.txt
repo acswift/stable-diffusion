@@ -1,0 +1,5 @@
+
+String to use as wrap for parser wildcard, .e.g __wildcard__
+https://www.nextdiffusion.ai/tutorials/dynamic-prompting-how-to-use-wildcards-in-stable-diffusion-a1111
+
+/* multiline comments! */

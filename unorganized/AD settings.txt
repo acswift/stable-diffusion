@@ -1,0 +1,528 @@
+https://andyhtu.com/adetailer-user-interface-a-complete-guide-to-the-after-detailer-interface/
+
+Skip to content
+Rezience | Andy H. Tu
+Home
+About
+Rezience
+Portfolio
+AI Films
+AI Workflow
+Blog
+Contact
+three mischievious friends, a man and 2 women - Adetailer User Interface
+Stable Diffusion, AI Workflow
+ADetailer User Interface: A Complete Guide to the After Detailer Interface
+ADetailer, also called After Detailer is a web-UI extension that takes Stable Diffusion to the next level. With ADetailer, you can add more details and refine the images with a bunch of extra tools that will allow you to fine-tune your images. For example, you can use ADetailer to fix any flaws or gaps in your images, such as missing faces or hands. You know, the kind of things that make your image look like a Picasso painting gone wrong.
+
+ADetailer uses a smart detection model to find and mask the objects that need some TLC, and then applies the inpainting model to generate the perfect image.
+
+You can also use ADetailer with ControlNet, another awesome extension that lets you control the pose and style of your image. You can make your image look like a painting, a sketch, or even a cartoon. The possibilities are endless!
+
+Developed by Bing-Su
+ADetailer is developed by Bing-su, a genius GitHub user who also created Detection Detailer, a similar extension that uses a different detection model. This is the ADetailer User Interface guide, where I will guide you how to use this amazing tool.
+
+This guide will cover everything you need to know about the ADetailer user interface, from the basic features to the advanced settings. By the end of this guide, you will have a full understanding of what each parameter does and how to use it in your creative workflow.
+
+Young woman with high face detection confidence score on a beach background.
+Before we start exploring the ADetailer interface, you need to make sure that you have installed the ADetailer extension. ADetailer works with both ComfyUI and Automatic1111, but in this guide, we will focus on the Automatic1111 version. If you haven’t installed the ADetailer extension yet, you can learn how to install it below.
+
+How to Install ADetailer Extension for Automatic1111
+How to Install ADetailer Extension for Automatic1111
+,After Detailer: A Tool for Image Quality Improvement n Hello and welcome to this blog post, where I will show you how to install ADetailer extension for Automatic1111. ADetailer or After Detailer is a powerful tool for image inpainting, which means filling in missing or damaged parts of an image with realistic and coherent content.…
+
+Table of Contents
+The After Detailer User Interface
+Adetailer Prompts and Negative Prompts
+Detection Dropdown Menu
+Mask Preprocessing Dropdown Menu
+Inpainting Dropdown Menu
+Inpainting Sliders and ‘Use Separate’ Tick Boxes
+Restore faces after ADetailer
+ControlNet Model Dropdown Menu
+The ADetailer Workflow
+These guides will show you how to get the most out of ADetailer’s features and workflows.
+ADetailer User Interface: A Complete Guide to the After Detailer Interface
+pin it for later
+The After Detailer User Interface
+
+At first look, the After Detailer User Interface isn’t so bad until you open up all the drop down menus, then it gets really big, using it isn’t so bad as long as you understand how the user interface works. If you’re here you probably don’t understand it, so I’m going to walk you through on what all of these does. T
+
+To access Adetailer, you will need to scroll down and click on the dropdown menu and it will expand the user interface.
+
+The first thing you will see is, “Enable Adetailer”. You need to click this in order to activate it. Below are 3 tabs. It actually defaults as 2, but if you followed my installation guide, you will have enabled a 3rd tab, which allows us greater individual controls of each Adetailer Models. Now we transition to the Adetailer model drop down menu, you understand what all of these does, you will need to read my Adetailer Installation guide where I explain what all these models does and how to install the deepfashion2 model in the process.
+
+After-Detailer-User-Interface
+The Adetailer user interface consists of several tabs, each with different settings and options. You can use multiple tabs to use different models and parameters for different parts of your image. The tabs are as follow below:
+
+Adetailer Prompts and Negative Prompts
+Adetailer prompts are a way of rewriting the Stable Diffusion prompts, but with more control and specificity. You can use Adetailer prompts to add or remove details from your image, or to apply different details to different objects in your image. You can use the [SEP] and [SKIP] symbols to separate and skip the objects that you want to process with Adetailer. Adetailer prompts work together with the text2img and img2img prompts, and create details on top of your original prompts. ADetailer prompts are optional, but they can enhance the quality and control of your image. These are the text inputs that you can use to specify what kind of details you want to add or remove from your image.
+
+For example, if you write a prompt “group of 3 friends“ in your main prompt and then an ADetailer prompt of “red lips [SEP] purple lips[SEP],[SKIP] freckles and glasses”
+
+[SEP] and ,[SKIP] are special symbols that you can use in your ADetailer prompts to apply different prompts to different objects in your image, or to skip some objects that you don’t want to process.
+
+[SEP] is a symbol that you can use to separate your ADetailer prompts into different parts, each applying to a different objects.
+
+For example, if you provide a prompt:	“red lips [SEP] purple lips [SEP],[SKIP] freckles and glasses”,
+The first part will apply to the the object with the highest face detection that ADetailer detects, and the second part will apply to the second object. If there are more objects than prompts, the last prompt will be used for the rest. The order in which objects are detected is highly arbitrary, so use with caution.
+[SKIP] is a symbol that you can use to tell ADetailer to ignore an object and not process it at all.
+
+For example, if you provide a prompt:	“red lips [SEP] purple lips [SEP],[SKIP] freckles and glasses”,
+The first part will apply to the highest detection object, the second object will be skipped, and the third part will apply to the third object.
+I hope this helps you understand what [SEP] and ,[SKIP] mean. If you have any questions, feel free to ask me. Example below:
+
+[SEP][SKIP][SEP] red lips eye shadow
+
+This tells ADetailer to skip the highest detected object and skip the second one.
+
+Adding the ADetailer prompt ‘red lips eye shadows’.
+
+after those symbols will ignore the first object, skip to the 3rd subject and apply those prompts to the 3rd.
+
+Below is a much longer ADetailer prompt example.
+
+Keep in mind that the ADetailer prompt acts as a secondary prompt that applies on the surface and will cause problems if you use prompts that conflict with the main one.
+
+[After Detailer Source]
+
+ADetailer Prompts
+ADetailer Prompts
+This means that the first line of the prompt will apply to the first object that ADetailer detects, the second line of the prompt will apply to the second object that ADetailer detects, the third object will be skipped, and the fourth line of the prompt will apply to the fourth object that ADetailer detects.
+
+If there are more objects than prompts, the last line of the prompt will be used for the rest. The order in which objects are detected is highly arbitrary, so use with caution. I hope this helps you understand the prompts better. If you have any questions, feel free to ask me.
+
+[Learn more about Prompt Engineering below]
+
+Prompt Weights & Punctuations – How to use it in Automatic1111- Stable Diffusion
+Prompt Weights & Punctuations – How to use it in Automatic1111- Stable Diffusion
+nPrompt Engineer 01 – Prompt Weights, Blending, & Punctuations Using Automatic1111 n Today we’re diving into a topic that’s been on my mind a lot lately: Prompt Weights. Now, you might have heard this term thrown around here and there, but let’s be honest, there isn’t one definitive guide that really breaks it down for…
+
+Simple exploration of the ADetailer Prompts
+Prompts: group of 3 friends
+Negative Prompts: easynegative, negative_hand-neg, NegfeetV2 (I actually didn’t have negative_hand and NegFeetv2 installed when I did this)
+​Model: ReV Animated V11 (Click to Download)	Seed: 2887255411
+​Sampling Method: DPM++ 2M Karras	CFG Scale: 7
+Steps: 20	Clip Skip: 1
+Height: 512	Width: 512
+​Upscaler: 4x UltraSharp	Denoising Strength: 0.4
+Below are the ADetailer you can test:
+
+Collage of AI-enhanced images showcasing a group of models with various makeup alterations.
+Detection Dropdown Menu
+ADetailer Detection model confidence threshold
+ADetailer Detection model confidence threshold
+When the image is generated, the AI analyzes the images and identifies the faces using the selected model. Each face is given a value that reflects how confident the model is in applying the details or corrections correctly. The higher the value, the better the model can render the face because it focus’ on less faces. For instance, if you want to adjust the center face in this image, you can raise the threshold to 0.86. This way, the model will only modify the face that have values 0.86 or higher based on your settings.
+
+Sequence of images depicting AI face detection confidence levels on models posing together in summer outfits.
+This is the dropdown menu that allows you to adjust the settings of the detection model, which is responsible for finding and masking the objects that need to be inpainted. The settings are:
+
+Detection model confidence threshold:
+
+This is the minimum confidence score that the detection model needs to have to consider an object as valid. The higher the threshold, the fewer objects will be detected and masked. The lower the threshold, the more objects will be detected and masked, but some of them might be false positives. The default value is 0.5.
+
+Mask only the top k largest (0 to disable):
+
+This is the option to limit the number of objects that will be masked based on their size. If you set this to a positive integer, only the k largest objects will be masked. If you set this to 0, all the detected objects will be masked. The default value is 0.
+
+Mask min area ratio:
+
+This is the option to filter out the masks that are too small. It is a value between 0 and 1 that represents the minimum fraction of the image area that a mask can occupy. For example, if you set this to 0.01, only the masks that are larger than 1% of the image area will be kept. The default value is 0.
+
+Mask max area ratio:
+
+This is the option to filter out the masks that are too large. It is a value between 0 and 1 that represents the maximum fraction of the image area that a mask can occupy. For example, if you set this to 0.5, only the masks that are smaller than 50% of the image area will be kept. The default value is 1.
+
+Mask Preprocessing Dropdown Menu
+Mask Preprocessing Adetailer
+Mask Preprocessing Adetailer
+The Mask X and Y offset moves the Inpainting Mask along the X and Y coordinates. This won’t show in the save preview, but it will apply the effect according to the coordinates defined when you use it. This tool is a bit cumbersome to use without an onscreen indicator of where the mask box is aligning, but with some practice, you’ll start noticing the pixel adjustment locations.
+
+Why would you use this? If I change the X and Y coordinates to position 50, the masking area will move 50 pixels to the right and up. This will improve the details on the subject in that position. This is done using the same face model twice, but only the second setting has different X and Y coordinates. The mask erosion and dilation slider is set at four by default. If you increase this value, it expands the masking area. However, this makes the image blurry in the center of the mask. Reducing the slider shrinks the masking area.
+
+Group of animated characters with face detection boxes and confidence scores, demonstrating mask offsets and adjustments.
+I didn’t find any use for these three settings in my workflow examples. This is because I used another method to achieve what I wanted more accurately, which I will showcase later in a workflow. the Mask erosion can be increased in size to include the hair and beard within the frame, or anything that is out of frame. Unless you have very specific needs, just keep these settings to default.
+
+Mask x(→) offset:
+
+This is the option to shift the masks horizontally by a certain number of pixels. It can be a positive or negative value. For example, if you set this to 10, the masks will be moved 10 pixels to the right. If you set this to -10, the masks will be moved 10 pixels to the left. The default value is 0.
+
+Mask y(↑) offset:
+
+This is the option to shift the masks vertically by a certain number of pixels. It can be a positive or negative value. For example, if you set this to 10, the masks will be moved 10 pixels up. If you set this to -10, the masks will be moved 10 pixels down. The default value is 0.
+
+Mask erosion (-) / dilation (+):
+
+This is a setting that allows you to change the size and shape of the masks that are used to inpaint the image. It can make the masks smaller or larger by a certain number of pixels. The default value is 0, which means no change. You can experiment with different values to see how they affect the inpainted image.
+
+The Mask Merge Mode
+The mask merge combines multiple detections and applies the inpainting before using them. I didn’t find this setting useful so you don’t need to adjust these settings. However, the Merge and Invert option is unique and I’ll show you how it works in a workflow.
+
+None:
+
+This means that each mask will be inpainted separately, without affecting the other masks. This is the default option.
+
+Merge:
+
+This means that all the masks will be merged into one mask, and then inpainted as a whole. This might result in smoother transitions between the objects, but also some loss of details.
+
+Merge and invert:
+
+This means that all the masks will be merged into one mask, and then inverted, so that the inpainting model will only work on the background, leaving the objects untouched. This might be useful if you want to change the background of your image, but keep the objects as they are.
+
+Inpainting Dropdown Menu
+ADetailer Inpainting User interface
+ADetailer Inpainting User interface
+Inpainting Sliders and ‘Use Separate’ Tick Boxes
+After Detailer smooths the mask edges by blurring them with the surroundings.
+
+This is the dropdown menu that allows you to adjust the settings of the inpainting model, which is responsible for generating the fixed image from the masked image. The settings are:
+
+Inpaint mask blur:
+
+The inpaint masked blur slider controls the amount of blurring. The higher the value, the wider the blur. I recommend keeping this value at default. This is the option to apply a blur effect to the masks before passing them to the inpainting model. It is a value between 0 and 64 that represents the radius of the blur kernel. The higher the value, the more blurred the masks will be. The default value is 0.
+
+Inpaint denoising strength:
+
+The denoising strength determines how much the AI alters the image in the masked area. A lower value preserves the original image more, while a higher value changes it more drastically. I will show you how to use this option correctly in the workflow. It requires some practice. Make sure this option is checked, otherwise the AI will inpaint and generate the whole image, which may not be what you want. This is the option to apply a denoising effect to the inpainted image after it is generated. It is a value between 0 and 1 that represents the strength of the denoising filter. The higher the value, the more denoised the image will be. The default value is 0.
+
+Inpaint only masked:
+
+This is the option to choose whether to inpaint only the masked areas, or the entire image. If you check this box, only the masked areas will be inpainted, and the rest of the image will be left unchanged. If you uncheck this box, the entire image will be inpainted, which might result in some changes in the unmasked areas as well. The default option is checked.
+
+Inpaint only masked padding, pixels:
+
+The ‘Inpaint only masked padding, pixels’ defines the padding size of the mask. If you want to change the mask padding in all directions, adjust this value accordingly. This is the option to add some padding around the masked areas before inpainting them. It is a value between 0 and 256 that represents the number of pixels to add around the masks. The higher the value, the more padding will be added. The default value is 0.
+
+Use separate width/height: By default, the model will use a predefined resolution to generate the masked area and resize it to match the output. This setting needs to be used with caution. When you enable this, the AI will use a different resolution as specified and resize it. This does not mean that using a higher resolution will always produce sharper images. After testing, I found out that this does not work well for the faces and actually makes them blurry. However, there are some cases where you can use this and get great results.
+
+Also, using a higher resolution will consume a lot of VRAM and take more time for the generation. This setting is completely GPU dependent. This is the option to choose whether to use the same or different values for the inpainting width and height. If you check this box, you can set different values for the inpainting width and height, which might affect the aspect ratio and resolution of the inpainted image. If you uncheck this box, the inpainting width and height will be the same as the original image width and height. The default option is unchecked.
+
+Inpaint width:
+
+This is the option to set the inpainting width, which is the width of the image that will be passed to the inpainting model. It is a value between 64 and 2048 that represents the number of pixels. The higher the value, the higher the resolution of the inpainted image. The default value is the same as the original image width.
+
+Inpaint height:
+
+This is the option to set the inpainting height, which is the height of the image that will be passed to the inpainting model. It is a value between 64 and 2048 that represents the number of pixels. The higher the value, the higher the resolution of the inpainted image. The default value is the same as the original image height.
+
+Enable and define the ‘Use separate xxxx’ settings if you want the steps, CFG, Models, etc. to differ from the original. You can use a separate checkpoint matching VAE and a different sampler for the mask regeneration. These settings are extremely useful and you could get very creative with these. Later in the workflow example, I will show you how and when to use these correctly.
+
+Use separate steps: If you check this box, you can set a different value for the number of steps, which might affect the quality and speed of the inpainting process. If you uncheck this box, the number of steps will be the same as the global setting. The default option is unchecked.
+
+Adetailer steps:
+
+This is the option to set the number of steps that the inpainting model will take to generate the image. It is a value between 1 and 150 that represents the number of iterations. The higher the value, the more refined the image will be, but also the longer it will take. The default value is the same as the global setting.
+
+Use separate CFG scale: This is the option to choose whether to use the same or different values for the CFG scale that the inpainting model will use to generate the image. If you check this box, you can set a different value for the CFG scale, which might affect the quality and style of the inpainting process. If you uncheck this box, the CFG scale will be the same as the global setting. The default option is unchecked.
+
+Adetailer CFG scale:
+
+This is the option to set the CFG scale that the inpainting model will use to generate the image. It is a value between 1 and 30 that represents the scale factor of the CFG (Conditional Feature Generator) network. The higher the value, the more detailed and realistic the image will be, but also the more prone to artifacts and noise. The default value is the same as the global setting.
+
+Use separate checkpoint: This is the option to choose whether to use the same or different checkpoints for the inpainting model. If you check this box, you can select a different checkpoint from the Adetailer checkpoint dropdown menu, which might affect the quality and style of the inpainting process. If you uncheck this box, the checkpoint will be the same as the global setting. The default option is unchecked.
+
+Adetailer checkpoint:
+
+This is the option to select the checkpoint for the inpainting model. A checkpoint is a saved state of the model that contains the weights and parameters that were learned during the training process. Different checkpoints might have different performance and characteristics, depending on the data and settings that were used to train them. You can choose from a list of available checkpoints, or use your own custom checkpoint by adding it to the models folder. The default checkpoint is the same as the global setting.
+
+Use separate VAE: This is the option to choose whether to use the same or different VAEs for the inpainting model. If you check this box, you can select a different VAE from the Adetailer VAE dropdown menu, which might affect the quality and style of the inpainting process. If you uncheck this box, the VAE will be the same as the global setting. The default option is unchecked.
+
+Adetailer VAE:
+
+This is the option to select the VAE for the inpainting model. A VAE is a Variational Autoencoder, which is a type of neural network that can encode and decode data in a latent space. Different VAEs might have different performance and characteristics, depending on the data and settings that were used to train them. You can choose from a list of available VAEs, or use your own custom VAE by adding it to the models folder. The default VAE is the same as the global setting.
+
+Use separate sampler: This is the option to choose whether to use the same or different samplers for the inpainting model. If you check this box, you can select a different sampler from the Adetailer Sampler dropdown menu, which might affect the quality and style of the inpainting process. If you uncheck this box, the sampler will be the same as the global setting. The default option is unchecked.
+
+ADetailer Sampler:
+
+This is the option to select the sampler for the inpainting model. A sampler is a function that samples values from the latent space of the VAE, which are then used to generate the image. Different samplers might have different performance and characteristics, depending on the distribution and range of the values. You can choose from a list of available samplers, such as normal, uniform, lognormal, etc. The default sampler is the same as the global setting.
+
+Use separate noise multiplier:
+
+This is the option to choose whether to use the same or different values for the noise multiplier that the inpainting model will use to generate the image. If you check this box, you can set a different value for the noise multiplier, which might affect the quality and style of the inpainting process. If you uncheck this box, the noise multiplier will be the same as the global setting. The default option is unchecked.
+
+ADetailer noise multiplier:
+
+This is the option to set the noise multiplier that the inpainting model will use to generate the image. It is a value between 0.5 and 1.5 that represents the factor by which the noise level of the image will be multiplied. The higher the value, the more noisy and diverse the image will be, but also the more prone to artifacts and noise. The default value is the same as the global setting.
+
+Use separate CLIP skip: This is the option to choose whether to use the same or different values for the number of CLIP skips that the inpainting model will use to generate the image. If you check this box, you can set a different value for the number of CLIP skips, which might affect the quality and speed of the inpainting process. If you uncheck this box, the number of CLIP skips will be the same as the global setting. The default option is unchecked.
+
+Adetailer CLIP skip:
+
+This is the option to set the number of CLIP skips that the inpainting model will use to generate the image. It is a value between 1 and 12 that represents the number of steps that the inpainting model will skip before applying the CLIP guidance. The higher the value, the faster the inpainting process will be, but also the less accurate and consistent with the prompts. The default value is the same as the global setting.
+
+Restore faces after ADetailer
+ADetailer Restore Face options
+ADetailer Restore Face options
+Keep the ‘Restore faces after Adetailer’ disabled as using the restore faces function after applying Adetailer makes no sense. After Detailer does a much better job than restore faces. So just leave it off, unless you have a creative use for it.
+
+This is the option to choose whether to restore the faces in the image after the inpainting process is done. If you check this box, the inpainted faces will be replaced by the original faces, which might improve the quality and realism of the faces, but also reduce the effect of the Adetailer prompts. If you uncheck this box, the inpainted faces will be kept as they are, which might result in some changes in the faces, but also more consistent with the Adetailer prompts. The default option is unchecked.
+
+ControlNet Model Dropdown Menu
+ADetailer Controlnet sliders
+ADetailer Controlnet sliders
+Just like the main ControlNet, the one within ADetailer also allows you to create multi-ControlNet as well as Multi Detailers, using the tabs above. If you’ve followed my installation guide, you should have 3 tabs you can use. Within the ADetailer extension, there are ControlNet models you can use.
+
+To learn more about the ControlNet models, I’ve written a guide on it below:
+
+How to Install ControlNet Automatic1111: A Comprehensive Guide
+How to Install ControlNet Automatic1111: A Comprehensive Guide
+In the early stages of AI image generation, automation was the name of the game. But as the field has grown rapidly, so has the need for tools that put control back in the hands of the creators. ControlNet Stable Diffusion epitomizes this shift, allowing users to have unprecedented influence over the aesthetics and structure…
+
+Below there are parameters that allows you to adjust the settings of the ControlNet model that enables you to control the pose and style of the generated image. You can use ControlNet with Adetailer, but you have to disable the other ControlNet outside of Adetailer. The settings are:
+
+ControlNet Model:
+
+This is the option to select the ControlNet model that you want to use. A ControlNet model is a neural network that can manipulate the pose and style of an image based on some guidance inputs. Different ControlNet models might have different performance and characteristics, depending on the data and settings that were used to train them. You can choose from a list of available ControlNet models, or use your own custom ControlNet model by adding it to the models folder. The default ControlNet model is the same as the global setting.
+
+ControlNet guidance start:
+
+This is the option to set the start point of the ControlNet guidance, which is the fraction of the inpainting steps that will be used to apply the ControlNet guidance. It is a value between 0 and 1 that represents the percentage of the inpainting steps. For example, if you set this to 0.5, the ControlNet guidance will start from the 50% of the inpainting steps. The default value is 0.
+
+ControlNet guidance end:
+
+This is the option to set the end point of the ControlNet guidance, which is the fraction of the inpainting steps that will be used to apply the ControlNet guidance. It is a value between 0 and 1 that represents the percentage of the inpainting steps. For example, if you set this to 1, the ControlNet guidance will end at the 100% of the inpainting steps. The default value is 1.
+
+ControlNet weight:
+
+This is the option to set the weight of the ControlNet guidance, which is the strength of the influence that the ControlNet guidance will have on the generated image. It is a value between 0 and 1 that represents the balance between the inpainting model and the ControlNet model. The higher the value, the more the image will follow the ControlNet guidance, but also the more distorted and unnatural it might be. The lower the value, the less the image will follow the ControlNet guidance, but also the more realistic and consistent with the original image it might be. The default value is 0.5.
+
+This pretty much covers the entire ADetailer interface. There are multiple tabs, meaning you can use multiple models with different settings and different models to give you creator control of how to add details and refine your image.
+
+To learn more about these settings and the entire ControlNet interface, please check out my guide below:
+
+Understanding ControlNet Interface in  Automatic1111 Web UI
+Understanding ControlNet Interface in Automatic1111 Web UI
+ControlNet is integrated into several Stable Diffusion WebUI platforms, notably Automatic1111, ComfyUI, and InvokeAI UI. Our focus here will be on A1111. With ControlNet, artists and designers gain an instrumental tool that allows for precision in crafting images that mirror their envisioned aesthetics. It’s a transformative approach to art generation. When you efficiently use ControlNet…
+
+Below are guides to my ADetailer workflows. I’ve written them in separate blogs as it can get pretty long and each blog provides different ideas as to how to properly use each tools.
+
+The ADetailer Workflow
+In this section, I will provide you links to my ADetailer Workflow guides. You will learn how to use ADetailer to transform your images from monstrous to marvelous. You will start by generating a base image. Stable Diffusion can can create amazing images, but sometimes also creates abominations that look like Jabba the Hut with a supermodel’s body. Don’t worry, ADetailer can fix that. Then, you will use ADetailer to edit the image and make it look more realistic and appealing.
+
+You will also learn how to use different tools and settings in ADetailer to tweak and retouch your image to your liking. By the end of this series, you will be able to use ADetailer to carve out a perfect image using all sorts of tools for every future workflows. These concepts will translate over ComyUI or any other Stable Diffusion Web UI workflows.
+
+These guides will show you how to get the most out of ADetailer’s features and workflows.
+How to Install ADetailer Extension for Automatic1111
+
+ADetailer User Interface:
+
+A Complete Guide to the After Detailer Interface
+
+ADetailer Workflow 01:
+
+How to Use Face and Hand Models with Detection Confidence
+
+ADetailer Workflow 02:
+
+How to Use Inpainting to Blend Styles with Different Models
+
+ADetailer Workflow 03:
+
+Add and Change Details with DeepFashion
+
+ADetailer Workflow 04:
+
+Learn to Change the Background of Your Images
+
+Tags And Categories
+After Detailer
+ 
+Automatic1111
+ 
+Stable Diffusion
+In:
+Stable Diffusion
+, 
+AI Workflow
+Share this post
+
+
+
+
+Leave a Reply
+Your email address will not be published. Required fields are marked *
+
+Comment *
+
+Name *
+
+Email *
+
+Website
+
+
+Save my name, email, and website in this browser for the next time I comment.
+
+
+Search
+Search in blog
+
+categories
+AI Filmmaking
+AI Talk
+AI Workflow
+Art Glossary
+ChatGPT
+Creator Economy
+Fitness Photography
+Marketing
+Midjourney
+Networking
+Personal
+Personal Branding
+Photography
+Photography Challenges
+Real Estate Photography
+Remote Viewing
+Stable Diffusion
+Storytelling
+Trending
+Visual Storytelling
+Web3
+ad image will be here
+
+Hyprr portfolio profile of Andy H Tu
+Join Hyprr
+Hyprr Academy
+Cinematic Shots & Camera Angles in AI Films & Images
+Cinematic Shots & Camera Angles in AI Films & Images
+Understanding cinematic fundamentals is more important than ever. Learn how…
+
+Cinematography and Film Cameras Prompt in Midjourney
+Cinematography and Film Cameras Prompt in Midjourney
+How I Use Cinematography and Film Camera Prompts in MidJourney…
+
+What AI Still Can’t Do (And Why That’s a Good Thing)
+What AI Still Can’t Do (And Why That’s a Good Thing)
+AI is evolving fast — fast enough to animate, generate,…
+
+a woman with dark hair and bangs
+Listen to Us
+Tag Cloud
+After Detailer
+AI News
+AnimateDiff
+Artist Guide
+Automatic1111
+Captions & Data Sets
+ChatGPT
+ComfyUI
+Content Creation
+ControlNet
+Creator Economy
+Data Monetization
+Decentralized Social Media
+Dreambooth
+Fine-Tuning Models
+Fitness Photography
+Fooocus
+Health
+Invoke
+Kohya_ss GUI
+LCM
+LoRa Training
+Marketing
+Midjourney
+Networking
+NFT
+Personal Branding
+Photo Editing
+Photography
+Prompt Travel
+Real Estate
+SEO
+Smart Contracts
+SocialFi
+Social Media
+Stable Diffusion
+Stable Diffusion News
+Stable Video Diffusion
+Storytelling
+Textual Inversion
+Tutorial
+Visual Storytelling
+Web3
+WebUI Forge
+Writing
+
+AI Workflow News
+Cinematic Shots & Camera Angles in AI Films & Images
+Cinematic Shots & Camera Angles in AI Films & Images
+Understanding cinematic fundamentals is more important than ever. Learn how…
+
+Cinematography and Film Cameras Prompt in Midjourney
+Cinematography and Film Cameras Prompt in Midjourney
+How I Use Cinematography and Film Camera Prompts in MidJourney…
+
+What AI Still Can’t Do (And Why That’s a Good Thing)
+What AI Still Can’t Do (And Why That’s a Good Thing)
+AI is evolving fast — fast enough to animate, generate,…
+
+You Might Like
+
+Recent Posts From Blog
+The Creative’s Compendium: A Comprehensive Art Glossary for Photography and Cinematography Styles, and More
+Glossary, Photography
+July 30, 2023
+The Creative’s Compendium: A Comprehensive Art Glossary for Photography and Cinematography Styles, and More
+This guide is a personal art glossary for me that I’d like to share with you. It’s a collection of terms and concepts that I learned along the way, from 3D animation to AI art.…
+
+Read More: The Creative’s Compendium: A Comprehensive Art Glossary for Photography and Cinematography Styles, and More
+Cinematic Shots & Camera Angles in AI Films & Images
+5/8/2025
+Cinematic Shots & Camera Angles in AI Films & Images
+Understanding cinematic fundamentals is more important than ever. Learn how framing, pacing, and shot language still shape emotional…
+
+Cinematography and Film Cameras Prompt in Midjourney
+5/8/2025
+Cinematography and Film Cameras Prompt in Midjourney
+How I Use Cinematography and Film Camera Prompts in MidJourney (And Why They Actually Matter if You’re Trying…
+
+What AI Still Can’t Do (And Why That’s a Good Thing)
+5/8/2025
+What AI Still Can’t Do (And Why That’s a Good Thing)
+AI is evolving fast — fast enough to animate, generate, and even simulate emotion in film. But beneath…
+
+This Is How We’ll Create From Now On | AI Filmmaking
+5/7/2025
+This Is How We’ll Create From Now On | AI Filmmaking
+A personal look at the rise of AI filmmaking, the creative shift it’s causing in the industry, and…
+
+a city skyline with tall buildings
+
+Upload your work, grow your audience, and get paid doing what you love.
+
+Thanks for reading my blog
+
+Blending Photography with the Language of Film.
+If you’re serious about using AI tools to build something original, not just content, but story — then you’re in the right place. I share real techniques, visual strategy, and behind-the-scenes insights from my own experiences adapting photography into film.
+
+No hype. Just tools, tips, and ideas that actually work.
+Sign up if you’re building something real.
+
+e.g., name@example.com
+
+Subscribe
+
+Andy H. Tu
+
+Commercial Photographer
+Founder of Rezience
+
+My Story
+Contact Me
+Join me on Hyprr
+Business E-mail
+Login
+Hyprr Academy
+Learn Photo Retouching
+Want to Guest Post?
+Privacy Policy
+Terms & Conditions
+Awkward but social
+
+
+Rezience ©2016
+

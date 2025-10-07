@@ -1,0 +1,58 @@
+8N or 8S?
+
+adetailer will not clear empty fields from previous settings
+
+can I use a space or a . in the empty field to do this?
+
+the masculine negative prompt did a job on the face!
+
+————————————————————————————————————————
+
+the results without the upscaler are not the same as with — I'm not sure how to 
+
+————————————————————————————————————————
+
+adding . to the negative AD prompt DELETED the main negative prompt, which would have been en jeu
+
+I have confirmed by copying the main negative prompt to the AD negative prompt that if the AD negative prompt is empty, it will use the main negative prompt
+
+AND using . in the negative prompt had a better result
+
+———————————————————————————————————————— 
+
+does 128px need to be changed to 64px for non-upscaled images?
+also blur & x-offset etc.
+
+———————————————————————————————————————— x offset
+
+just moves the image by the specified amount — no surprise
+
+———————————————————————————————————————— dilation vs padding
+
+it LOOKS like dilation increases the head size, so need to use padding to counter
+or remove dilation altogether?
+
+———————————————————————————————————————— 
+
+now testing by reducing blur from 32 to 16 and removing 32px x-offset
+
+will then test with much less dilation
+
+———————————————————————————————————————— problem was lora
+
+lora ineffective when there's nothing around it — need margin to function
+
+same thing without lora — face is much nicer when dilated by 128px, but background doesn't match
+
+https://kindanai.com/en/manual-adetailer/
+https://github.com/Bing-su/adetailer/wiki/Advanced
+
+I cannot find an official explanation of padding, but it seems to do with integrating the background into the new image
+
+from reddit: Make sure you experiment with the Padding option. Increasing padding will add surrounding context and it's a lot easier to see it in action with previews enabled.
+
+Inpaint only masked padding to 96 so the face matches the original image better.
+
+Increase the mask padding, so more of the image is considered and doesn't confuse feet with hand.
+
+First I'd try bumping up pixel padding from 32 to 64.
