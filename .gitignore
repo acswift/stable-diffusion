@@ -1,6 +1,7 @@
 .gitconfig
 *.un~
 untracked/*
+_*
 .DS*
 "Icon\r"
 .swp
