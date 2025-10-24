@@ -8,4 +8,5 @@ _*
 .README.md.swp
 Xcode/SvijaSync.xcodeproj/xcuserdata/*
 *.xcuserstate
+*danger.json
 Xcode/SvijaSync.xcodeproj/project.xcworkspace/xcuserdata/user.xcuserdatad/*

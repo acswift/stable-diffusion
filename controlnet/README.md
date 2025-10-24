@@ -1,7 +1,41 @@
 
+<!-- vim: set foldmethod=marker fmr=###,--- :-->
+
 ### controlnet
 
 https://andyhtu.com/how-to-install-controlnet-automatic1111-a-comprehensive-guide/
+
+To see the images:
+
+change `https://goldeyes.net/wpmedia/andyhtu/` to `https://andyhtu.com/wp-content/`
+
+> replace everything up to `uploads`
+
+* * *
+
+One step is using the Automatic1111 Web UI, and the other step is using GitHub Desktop. Follow the method that best suits you.
+
+![Load ControlNet from Extension][images/Load-ControlNet-From-Extension.jpg]
+
+![Find and Install SD WebUI ControlNet Manipulation Extension][find-and-install-sd-webui-controlnet-manipulation-extension.jpg]
+
+
+**Option 1 – Using the Automatic1111 Web UI:**
+
+1. Open up your Automatic1111 Web UI.
+2. Go to the Extensions Tab > Available tab > click “Load From.”
+3. In the search bar,
+4. Type in “controlnet.” You’ll see “sd_webui_controlnet” listed below.
+5. Click on “Install” to the right side.
+6. Go to the “Installed” tab > Apply and restart UI.
+
+Done!
+
+---
+
+<details><summary>other</summary><br>
+
+#### other
 
 https://github.com/Mikubill/sd-webui-controlnet.git
 
@@ -10,8 +44,6 @@ git clone https://github.com/Mikubill/sd-webui-controlnet.git
 
 there was  lot of downloading, but it looks like I chould have cloned it
 https://huggingface.co/docs/hub/en/repositories-getting-started
-
----
 
 https://github.com/lllyasviel/ControlNet/issues/149
 try this
@@ -47,10 +79,10 @@ https://www.reddit.com/r/StableDiffusion/comments/12na7ic/controlnet11_arrived_i
 
 https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
 
----
+
 
 https://www.reddit.com/r/StableDiffusion/comments/11cwiv7/collected_notes_and_observations_on_controlnet/
 
 ---
 
-
+</details>
