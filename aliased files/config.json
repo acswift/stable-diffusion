@@ -41,7 +41,7 @@
     "dp_magicprompt_batch_size": 1,
     "sd_model_checkpoint": "gurilamashXXXSDXL_gurilamashv3.safetensors [93aff6aef9]",
     "sd_checkpoint_hash": "93aff6aef9ef98b4e6cd5f603d3b134416a069d2e13b3d92db259460f1f45f1d",
-    "sd_vae": "fixFP16ErrorsSDXLLowerMemoryUse_v10.safetensors",
+    "sd_vae": "sdxl_vae.safetensors",
     "outdir_samples": "",
     "outdir_txt2img_samples": "outputs/txt2img-images",
     "outdir_img2img_samples": "outputs/img2img-images",
@@ -86,7 +86,7 @@
     "temp_dir": "",
     "clean_temp_dir_at_start": false,
     "save_incomplete_images": true,
-    "notification_audio": false,
+    "notification_audio": true,
     "notification_volume": 100,
     "save_to_dirs": true,
     "grid_save_to_dirs": true,
@@ -272,7 +272,8 @@
     "extra_options_txt2img": [
         "emphasis",
         "jpeg_quality",
-        "notification_volume"
+        "notification_volume",
+        "sd_vae"
     ],
     "extra_options_img2img": [],
     "extra_options_cols": 1,
@@ -410,6 +411,32 @@
     "deepbooru_escape": true,
     "deepbooru_filter_tags": "",
     "upscaler_for_img2img": "4x_foolhardy_Remacri",
-    "disabled_extensions": [],
-    "disable_all_extensions": "none"
+    "disabled_extensions": [
+        "adetailer",
+        "sd-dynamic-prompts",
+        "sd-webui-controlnet"
+    ],
+    "disable_all_extensions": "none",
+    "control_net_detectedmap_dir": "detected_maps",
+    "control_net_models_path": "",
+    "control_net_modules_path": "",
+    "control_net_unit_count": 3,
+    "control_net_model_cache_size": 2,
+    "control_net_inpaint_blur_sigma": 7,
+    "control_net_no_detectmap": false,
+    "control_net_detectmap_autosaving": false,
+    "control_net_allow_script_control": false,
+    "control_net_sync_field_args": true,
+    "controlnet_show_batch_images_in_ui": false,
+    "controlnet_increment_seed_during_batch": false,
+    "controlnet_disable_openpose_edit": false,
+    "controlnet_disable_photopea_edit": false,
+    "controlnet_photopea_warning": true,
+    "controlnet_ignore_noninpaint_mask": false,
+    "controlnet_clip_detector_on_cpu": false,
+    "controlnet_control_type_dropdown": false,
+    "prioritized_callbacks_on_reload": [],
+    "prioritized_callbacks_script_before_process_batch": [],
+    "prioritized_callbacks_script_postprocess": [],
+    "prioritized_callbacks_script_postprocess_batch": []
 }

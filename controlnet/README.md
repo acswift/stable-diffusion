@@ -114,6 +114,72 @@ source venv/bin/activate
 ```
 - Restart A1111 (it restarted without errors)
 
+Well actually, one error:
+- insightface warning: You can fix it by running:
+```
+cd ~/Applications/stable-diffusion-webui/
+source venv/bin/activate
+pip install insightface
+```
+This created a new problem:
+> insightface pulled in numpy 2.x and protobuf 6.x, but A1111 and its dependencies (like gradio, mediapipe, open-clip-torch, etc.) require numpy < 2 and protobuf < 4.
+
+Fix:
+```
+source venv/bin/activate
+pip install "numpy<2" "protobuf<4" --force-reinstall
+pip install insightface --no-deps
+```
+
+---
+### blurry images
+
+Edit your launch command to enable MPS (Apple GPU) instead of forcing CPU.
+
+1. Open webui-user.sh in your Stable Diffusion folder.
+```
+cd /Users/Main/Applications/stable-diffusion-webui
+source venv/bin/activate
+python -m pip install --upgrade torch torchvision torchaudio
+```
+```
+python -c "import torch; print(torch.backends.mps.is_available())"
+# should print True
+```
+Start A111 using:
+```
+./webui.sh --no-half-vae
+```
+Search output for "Using device: mps"
+
+
+Remove --use-cpu interrogate and --skip-torch-cuda-test.
+
+Add this instead:
+
+export PYTORCH_ENABLE_MPS_FALLBACK=1
+./webui.sh --no-half-vae
+
+--- 
+
+### what worked
+
+The error was because after upgrading Python, the PyTorch + torchvision versions you tried are incompatible. On macOS / Apple Silicon, the correct combo for SDXL + MPS is:
+
+- torch 2.3.0
+- torchvision 0.18.0
+- torchaudio 2.3.0
+
+PyTorch provides macOS arm64 wheels only for certain version combos. Try this:
+```
+source venv/bin/activate
+pip uninstall torch torchvision torchaudio -y
+pip install torch==2.3.0 torchvision==0.18.0 torchaudio==2.3.0 --index-url https://download.pytorch.org/whl/cpu
+```
+update `webui-macos-env.sh`:
+```
+export COMMANDLINE_ARGS="--skip-torch-cuda-test --upcast-sampling"
+```
 ---
 
 <details><summary>other</summary><br>

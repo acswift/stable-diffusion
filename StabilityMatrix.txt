@@ -1,0 +1,3 @@
+https://github.com/LykosAI/StabilityMatrix
+
+https://github.com/LykosAI/StabilityMatrix/wiki/Inference-Guide
