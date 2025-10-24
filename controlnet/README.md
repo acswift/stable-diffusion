@@ -5,6 +5,8 @@
 
 [Andy Hu's tutorial](https://andyhtu.com/how-to-install-controlnet-automatic1111-a-comprehensive-guide/)
 
+[many more links](https://andyhtu.com/?s=controlnet)
+
 > Image can be repared by changing `https://goldeyes.net/wpmedia/andyhtu/` to `https://andyhtu.com/wp-content/`
 
 ---
