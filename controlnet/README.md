@@ -11,6 +11,8 @@
 
 ---
 
+https://stable-diffusion-art.com/controlnet-sdxl/
+
 ### Step 1: Installing ControlNet
 
 One step is using the Automatic1111 Web UI, and the other step is using GitHub Desktop. Follow the method that best suits you.
