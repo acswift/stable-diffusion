@@ -86,7 +86,14 @@ Dealing with Preprocessed Images: If OpenPose isn’t working, it might be becau
 
 Remember, ControlNet is very particular about the images it processes. Always consider whether your image requires preprocessing or if it’s already optimized for use with OpenPose. Follow these guidelines, and you’ll find the process smoother and more intuitive. Have fun!
 
-ControlNet References: [Mikubill](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md) / [SD-Webui-ControlNet](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md)
+ControlNet References: [Mikubill / SD-Webui-ControlNet](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md)
+
+---
+### The ControlNet Blueprint
+
+- [Why ControlNet is Setting New Standards in AI Art Generation](https://www.andyhtu.com/post/what-is-controlnet-ai-art)
+- [How to Install ControlNet Automatic1111: A Comprehensive Guide](https://www.andyhtu.com/post/how-to-install-controlnet-automatic-1111-a-comprehensive-guide)
+- [Understanding ControlNet Interface in Automatic1111 Web UI](https://www.andyhtu.com/post/Understanding-ControlNet-Interface-in-Automatic-1111-Web-UI)
 
 ---
 ### errors

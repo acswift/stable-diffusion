@@ -272,8 +272,7 @@
     "extra_options_txt2img": [
         "emphasis",
         "jpeg_quality",
-        "notification_volume",
-        "sd_vae"
+        "notification_volume"
     ],
     "extra_options_img2img": [],
     "extra_options_cols": 1,
@@ -411,11 +410,7 @@
     "deepbooru_escape": true,
     "deepbooru_filter_tags": "",
     "upscaler_for_img2img": "4x_foolhardy_Remacri",
-    "disabled_extensions": [
-        "adetailer",
-        "sd-dynamic-prompts",
-        "sd-webui-controlnet"
-    ],
+    "disabled_extensions": [],
     "disable_all_extensions": "none",
     "control_net_detectedmap_dir": "detected_maps",
     "control_net_models_path": "",
