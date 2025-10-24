@@ -15,9 +15,9 @@ change `https://goldeyes.net/wpmedia/andyhtu/` to `https://andyhtu.com/wp-conten
 
 One step is using the Automatic1111 Web UI, and the other step is using GitHub Desktop. Follow the method that best suits you.
 
-![Load ControlNet from Extension][images/Load-ControlNet-From-Extension.jpg]
+![Load ControlNet from Extension](images/Load-ControlNet-From-Extension.jpg)
 
-![Find and Install SD WebUI ControlNet Manipulation Extension][find-and-install-sd-webui-controlnet-manipulation-extension.jpg]
+![Find and Install SD WebUI ControlNet Manipulation Extension](find-and-install-sd-webui-controlnet-manipulation-extension.jpg)
 
 
 **Option 1 – Using the Automatic1111 Web UI:**
