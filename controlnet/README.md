@@ -34,12 +34,12 @@ This method is my preferred way to install, as it’s cleaner and helps tidy thi
 Find the Link:
 
 1. Open up your Automatic1111 Web UI  
-  - Go to “Extensions” > “Available” > Click “Load From” Search “control” > right-click “sd_webui_controlnet” > copy link Address.
-  - The link will be: ” https://github.com/Mikubill/sd-webui-controlnet”
+   - Go to “Extensions” > “Available” > Click “Load From” Search “control” > right-click “sd_webui_controlnet” > copy link Address.
+   - The link will be: ” https://github.com/Mikubill/sd-webui-controlnet”
 2. In GitHub Desktop Clone.
-  - File > Clone repository
-  - URL tab > Paste the URL in the URL box
-  - Local path is where you installed Automatic1111 > extensions >
+   - File > Clone repository
+   - URL tab > Paste the URL in the URL box
+   - Local path is where you installed Automatic1111 > extensions >
 3. Open up Automatic1111 WebUI.
 
 Now you should see a ControlNet option in the main screen under the txt2img and img2img tab. It will also appear on other tabs if you have them installed for other extensions.
