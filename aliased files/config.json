@@ -409,5 +409,7 @@
     "deepbooru_use_spaces": true,
     "deepbooru_escape": true,
     "deepbooru_filter_tags": "",
-    "upscaler_for_img2img": "4x_foolhardy_Remacri"
+    "upscaler_for_img2img": "4x_foolhardy_Remacri",
+    "disabled_extensions": [],
+    "disable_all_extensions": "none"
 }
