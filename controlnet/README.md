@@ -48,13 +48,13 @@ git clone git@github.com:Mikubill/sd-webui-controlnet.git
 Now you should see a ControlNet option in the main screen under the txt2img and img2img tab. It will also appear on other tabs if you have them installed for other extensions.
 
 ---
-### Step 2: Installing the Models
+### Step 2: Installing the Models (51 GB)
 
 You’ll notice that the Preprocessor and Model drop-down menu doesn’t show anything in the models folder. That’s because you’ll now need to install the models for ControlNet.
 
 1. Download the Files:
-   - https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
-   - https://huggingface.co/lllyasviel/sd_control_collection/tree/main (SDXL)
+   - https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main (28 items)
+   - https://huggingface.co/lllyasviel/sd_control_collection/tree/main (SDXL) (43 items)
 2. You will need both the .yaml file (configuration) and the .pth file (larger, indicated by the “LFS” logo).
    - Click on the down arrow to download all these files.
    - (You don’t need all of them, just the ones you want, but I’d download all to keep the instructions simple.)
@@ -67,6 +67,52 @@ You’ll notice that the Preprocessor and Model drop-down menu doesn’t show an
 You’re now done with Installing ControlNet for Automatic1111.
 
 ![ControlNet Unit Panel](images/ControlNet-Control-panel.jpg)
+
+---
+### Post-Installation Tips and Best Practices
+
+Using ControlNet with an OpenPose model can be a bit tricky, especially if you’re new to the process. Here’s a consolidated guide to help you get the best results:
+
+Understanding Preprocessors: Preprocessors build a model image from a standard image to be used by the corresponding model in ControlNet. If you’re using an image already compatible with OpenPose (like a “stick person” template), there’s no need to use a preprocessor.
+
+In other words:
+- If your input is a regular photo of a person, use both the preprocessor and model set to OpenPose.
+- If your input is already an OpenPose image, set the preprocessor to “none” and the model to OpenPose.
+
+Dealing with Preprocessed Images: If OpenPose isn’t working, it might be because your input image is already preprocessed. ControlNet is highly sensitive to the data it receives. Even a minor variation in pixel color value can disrupt the image.
+- Ensure that the preprocessor field is empty for an already synthesized picture to allow OpenPose to work.
+- If it still doesn’t function, your image might be at fault.  
+  In that case, load a fresh image and extract the pose or import an already optimized picture obtained through programs explicitly compatible with ControlNet (like the OpenPose loader extension for Automatic1111).
+
+Remember, ControlNet is very particular about the images it processes. Always consider whether your image requires preprocessing or if it’s already optimized for use with OpenPose. Follow these guidelines, and you’ll find the process smoother and more intuitive. Have fun!
+
+ControlNet References: [Mikubill](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md) / [SD-Webui-ControlNet](https://github.com/Mikubill/sd-webui-controlnet/blob/main/README.md)
+
+---
+### errors
+
+I got the following errors because my Python was out of date.
+
+- Error loading script: api.py
+- Error loading script: batch_hijack.py
+- Error loading script: controlnet.py
+- Error loading script: external_code.py
+- Error loading script: infotext.py
+- Error loading script: xyz_grid_support.py
+
+The fix
+```
+brew install python@3.10
+# Python is installed as
+# /opt/homebrew/bin/python3.10
+```
+```
+cd /Users/Main/Applications/stable-diffusion-webui
+rm -rf venv
+python3.10 -m venv venv
+source venv/bin/activate
+```
+- Restart A1111 (it restarted without errors)
 
 ---
 
