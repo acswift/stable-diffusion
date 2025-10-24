@@ -52,21 +52,18 @@ Now you should see a ControlNet option in the main screen under the txt2img and 
 
 You’ll notice that the Preprocessor and Model drop-down menu doesn’t show anything in the models folder. That’s because you’ll now need to install the models for ControlNet.
 
-Download the Files:
+1. Download the Files:
+   - https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
+   - https://huggingface.co/lllyasviel/sd_control_collection/tree/main (SDXL)
+2. You will need both the .yaml file (configuration) and the .pth file (larger, indicated by the “LFS” logo).
+   - Click on the down arrow to download all these files.
+   - (You don’t need all of them, just the ones you want, but I’d download all to keep the instructions simple.)
+3. Drop all files in the Stable Diffusion Automatic1111 installation folder:
+   - Extensions > sd-webui-controlnet > models > 
+   - drop all the control_V11 .pth and .yml files.
+4. Open A1111:
+   - All the ControlNet models should now populate under the drop down menu.
 
-https://huggingface.co/lllyasviel/ControlNet-v1-1/tree/main
-https://huggingface.co/lllyasviel/sd_control_collection/tree/main (SDXL)
-You will need both the .yaml file (configuration) and the .pth file (larger, indicated by the “LFS” logo).
-
-Click on the down arrow to download all these files.
-(You don’t need all of them, just the ones you want, but I’d download all to keep the instructions simple.)
-Drop all files in the Stable Diffusion Automatic1111 installation folder:
-
-Extensions > sd-webui-controlnet >
-models > drop all the control_V11 .pth and .yml files.
-Open A1111:
-
-All the ControlNet models should now populate under the drop down menu.
 You’re now done with Installing ControlNet for Automatic1111.
 
 ![ControlNet Unit Panel](images/ControlNet-Control-panel.jpg)
