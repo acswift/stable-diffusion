@@ -3,13 +3,9 @@
 
 ### controlnet
 
-https://andyhtu.com/how-to-install-controlnet-automatic1111-a-comprehensive-guide/
+[Andy Hu's tutorial](https://andyhtu.com/how-to-install-controlnet-automatic1111-a-comprehensive-guide/)
 
-To see the images:
-
-change `https://goldeyes.net/wpmedia/andyhtu/` to `https://andyhtu.com/wp-content/`
-
-> replace everything up to `uploads`
+> Image can be repared by changing `https://goldeyes.net/wpmedia/andyhtu/` to `https://andyhtu.com/wp-content/`
 
 * * *
 
