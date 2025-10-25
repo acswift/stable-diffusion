@@ -3,7 +3,6 @@
 
 *Updated 25 October, 2025 · Toulouse*
 
-
 ### Stable Diffusion / A1111
 
 Notes on how to get the best results from Stable Diffusion using Automatic1111 on an iMac M4.
@@ -16,13 +15,22 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 ```
 cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
 ```
-Install any models at this time — otherwise you'll have to wait while the default models are downloaded.
+At this time, install:
+- SD models (otherwise you'll have to wait while the default models are downloaded)
+- notification sounds
+- extensions if already downloaded
 ```
 cd ~/Applications/stable-diffusion-webui && ./webui.sh
 ```
-Check the Python version in the Terminal output — version 3.10 is required for ControlNet.
+Check the Python version in the Terminal output — `3.10` is required for ControlNet.
 
 ---
+</details><details><summary>Symlinks</summary>
+
+### Symlinks
+
+---
+
 </details><details><summary>Follow Up</summary>
 
 ### Follow Up
