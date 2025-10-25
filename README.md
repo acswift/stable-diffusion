@@ -35,16 +35,16 @@ The following files are stored in this repo, to make configuration easier:
 - `user.css` - any user-created CSS
 
 ```
-src='/Users/Main/Library/Mobile Documents/com~apple~CloudDocs/Repositories'
-dest='/Users/Main/Applications'
+src="/Users/Main/Library/Mobile Documents/com~apple~CloudDocs/Repositories"
+dest="/Users/Main/Applications"
 ```
 ```
 #m                                                                           #"$dest/stable-diffusion-webui/config.json" 
-printf "$src/stable-diffusion/aliased files/config.json"                      #"$dest/stable-diffusion-webui/config.json" 
+printf $src"/stable-diffusion/aliased files/config.json"                      #"$dest/stable-diffusion-webui/config.json" 
 #m                                                                           #"$dest/stable-diffusion-webui/ui-config.json" 
-printf "$src/stable-diffusion/stable-diffusion/aliased files/ui-config.json"  #"$dest/stable-diffusion-webui/ui-config.json" 
+printf $src"/stable-diffusion/stable-diffusion/aliased files/ui-config.json"  #"$dest/stable-diffusion-webui/ui-config.json" 
 #m                                                                           #"$dest/stable-diffusion-webui/user.css"
-printf "$src/stable-diffusion/stable-diffusion/aliased files/user.css"        #"$dest/stable-diffusion-webui/user.css"
+printf $src"/stable-diffusion/stable-diffusion/aliased files/user.css"        #"$dest/stable-diffusion-webui/user.css"
 ```
 ---
 
