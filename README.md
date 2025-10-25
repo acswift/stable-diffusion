@@ -1,9 +1,8 @@
-<!-- ![](images/shadow.jpg)  -->
-<!-- ![](images/divider.jpg) -->
 
-*Updated 31 March, 2025 · Toulouse*
+<!-- vim: set foldmethod=marker fmr=###,--- :-->
 
-![](images/divider.jpg)
+*Updated 25 October, 2025 · Toulouse*
+
 
 ### Stable Diffusion / A1111
 
@@ -11,7 +10,8 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 
 ![](images/divider.jpg)
 
-### installation
+<details><summary>Installation</summary>
+### Installation
 
 ```
 cd && git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
@@ -20,6 +20,7 @@ cd && git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
 I had to reinstall A1111 after installing the macOS 26 Tahoe betas.
 
 ---
+</details>
 
 Links to follow up on:
 

@@ -41,7 +41,7 @@
     "dp_magicprompt_batch_size": 1,
     "sd_model_checkpoint": "gurilamashXXXSDXL_gurilamashv3.safetensors [93aff6aef9]",
     "sd_checkpoint_hash": "93aff6aef9ef98b4e6cd5f603d3b134416a069d2e13b3d92db259460f1f45f1d",
-    "sd_vae": "sdxl_vae.safetensors",
+    "sd_vae": "fixFP16ErrorsSDXLLowerMemoryUse_v10.safetensors",
     "outdir_samples": "",
     "outdir_txt2img_samples": "outputs/txt2img-images",
     "outdir_img2img_samples": "outputs/img2img-images",
