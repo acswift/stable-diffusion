@@ -29,6 +29,21 @@ Check the Python version in the Terminal output — `3.10` is required for Contr
 
 ### Symlinks
 
+The following files are stored in this repo, to make configuration easier:
+- `config.json` - settings
+- `ui-config.json` - settings saved from the Other › Defaults settings tabs
+- `user.css` - any user-created CSS
+
+```
+src='/Users/Main/Library/Mobile\ Documents/com\~apple\~CloudDocs/Repositories'
+dest='/Users/Main/Applications'
+```
+
+```
+ln -s "$src/stable-diffusion/aliased\ files/config.json"                     "$dest/stable-diffusion-webui/config.json" 
+ln -s "$src/stable-diffusion/stable-diffusion/aliased\ files/ui-config.json" "$dest/stable-diffusion-webui/ui-config.json" 
+ln -s "$src/stable-diffusion/stable-diffusion/aliased\ files/user.css"       "$dest/stable-diffusion-webui/user.css"
+```
 ---
 
 </details><details><summary>Follow Up</summary>
