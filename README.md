@@ -39,12 +39,12 @@ src='/Users/Main/Library/Mobile Documents/com~apple~CloudDocs/Repositories'
 dest='/Users/Main/Applications'
 ```
 ```
-rm                                                                           "$dest/stable-diffusion-webui/config.json" 
-ln -s "$src/stable-diffusion/aliased files/config.json"                      "$dest/stable-diffusion-webui/config.json" 
-rm                                                                           "$dest/stable-diffusion-webui/ui-config.json" 
-ln -s "$src/stable-diffusion/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
-rm                                                                           "$dest/stable-diffusion-webui/user.css"
-ln -s "$src/stable-diffusion/stable-diffusion/aliased files/user.css"        "$dest/stable-diffusion-webui/user.css"
+#m                                                                           #"$dest/stable-diffusion-webui/config.json" 
+printf "$src/stable-diffusion/aliased files/config.json"                      #"$dest/stable-diffusion-webui/config.json" 
+#m                                                                           #"$dest/stable-diffusion-webui/ui-config.json" 
+printf "$src/stable-diffusion/stable-diffusion/aliased files/ui-config.json"  #"$dest/stable-diffusion-webui/ui-config.json" 
+#m                                                                           #"$dest/stable-diffusion-webui/user.css"
+printf "$src/stable-diffusion/stable-diffusion/aliased files/user.css"        #"$dest/stable-diffusion-webui/user.css"
 ```
 ---
 
