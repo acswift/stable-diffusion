@@ -16,8 +16,11 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 ```
 cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
 ```
+Install any models at this time — otherwise you'll have to wait while the default models are downloaded.
+```
+cd ~/Applications/stable-diffusion-webui && ./webui.sh
+```
 
-I had to reinstall A1111 after installing the macOS 26 Tahoe betas.
 
 ---
 </details><details><summary>Follow Up</summary>
