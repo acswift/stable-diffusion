@@ -11,10 +11,10 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 ---
 
 <details><summary>Installation</summary>
-### Installation
 
+### Installation
 ```
-cd && git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui
+cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
 ```
 
 I had to reinstall A1111 after installing the macOS 26 Tahoe betas.
