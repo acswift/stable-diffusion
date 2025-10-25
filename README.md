@@ -20,7 +20,7 @@ Install any models at this time — otherwise you'll have to wait while the def
 ```
 cd ~/Applications/stable-diffusion-webui && ./webui.sh
 ```
-
+Check the Python version in the Terminal output — version 3.10 is required for ControlNet.
 
 ---
 </details><details><summary>Follow Up</summary>
