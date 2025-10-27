@@ -33,7 +33,7 @@ Forge is currently based on SD-WebUI 1.10.1 at this commit. (Because original SD
 
 ---
 
-#### Stable Diffusion WebUI Forge - Classic
+#### Stable Diffusion WebUI Forge - Classic (no macOS support)
 
 - [Stable Diffusion WebUI Forge - Classic](https://github.com/Haoming02/sd-webui-forge-classic) · Oct 26, 2025
 
@@ -43,7 +43,7 @@ Forge Classic: https://github.com/Haoming02/sd-webui-forge-classic, from @Haomin
 
 ---
 
-#### 
+#### Stable Diffusion WebUI Forge - Neo (no macOS support)
 
 - [Stable Diffusion WebUI Forge - Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo) · Oct 27, 2025
 
@@ -56,6 +56,8 @@ Forge Neo: https://github.com/Haoming02/sd-webui-forge-classic/tree/neo, from @H
 #### Stable Diffusion WebUI Forge/reForge
 
 - [Stable Diffusion WebUI Forge/reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) · Oct 25, 2025
+
+The author specifically recommends using Classic or Neo for stability (implying that reForge will be unstable).
 
 Stable Diffusion WebUI Forge/reForge is a platform on top of Stable Diffusion WebUI (based on Gradio) to make development easier, optimize resource management, speed up inference, and study experimental features.
 
