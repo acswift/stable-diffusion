@@ -3,16 +3,7 @@
 
 *Updated 27 October, 2025 · Toulouse*
 
-### Version Information
-
-Ordered by last commit, oldest first:
-
-
-Forge Classic: https://github.com/Haoming02/sd-webui-forge-classic, from @Haoming02 with a lot of optimizations and features, from reforge, forge, etc based on old backend of forge.
-
-Stable Diffusion WebUI Forge is a platform on top of the original Stable Diffusion WebUI by AUTOMATIC1111, to make development easier, optimize resource management, speed up inference, and study experimental features.
-
-"Classic" mainly serves as an archive for the "previous" version of Forge, which was built on Gradio 3.41.2 before the major changes (see the original announcement) were introduced. Additionally, this fork is focused exclusively on SD1 and SDXL checkpoints, having various optimizations implemented, with the main goal of being the lightest WebUI without any bloatwares.
+### SD Web UI Versions
 
 ---
 
@@ -30,6 +21,8 @@ No longer maintained.
 
 - [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) · Jun 26, 2025
 
+Stable Diffusion WebUI Forge is a platform on top of the original Stable Diffusion WebUI by AUTOMATIC1111, to make development easier, optimize resource management, speed up inference, and study experimental features.
+
 Stable Diffusion WebUI Forge is a platform on top of Stable Diffusion WebUI (based on Gradio ) to make development easier, optimize resource management, speed up inference, and study experimental features.
 
 The name "Forge" is inspired from "Minecraft Forge". This project is aimed at becoming SD WebUI's Forge.
@@ -43,6 +36,8 @@ Forge is currently based on SD-WebUI 1.10.1 at this commit. (Because original SD
 #### Stable Diffusion WebUI Forge - Classic
 
 - [Stable Diffusion WebUI Forge - Classic](https://github.com/Haoming02/sd-webui-forge-classic) · Oct 26, 2025
+
+Forge Classic: https://github.com/Haoming02/sd-webui-forge-classic, from @Haoming02 with a lot of optimizations and features, from reforge, forge, etc based on old backend of forge.
 
 "Classic" mainly serves as an archive for the "previous" version of Forge, which was built on Gradio 3.41.2 before the major changes (see the original announcement) were introduced. Additionally, this fork is focused exclusively on SD1 and SDXL checkpoints, having various optimizations implemented, with the main goal of being the lightest WebUI without any bloatwares.
 
