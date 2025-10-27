@@ -7,7 +7,8 @@
 
 Ordered by last commit, oldest first:
 - [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) · Jul 27, 2024
-- [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) · Jun 26, 2025
+- [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) · Jun 26, 2025  
+  [macOS instructions](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/2503)
 - [Stable Diffusion WebUI Forge/reForge](https://github.com/Panchovix/stable-diffusion-webui-reForge) · Oct 25, 2025
 - [Stable Diffusion WebUI Forge - Classic](https://github.com/Haoming02/sd-webui-forge-classic) · Oct 26, 2025
 - [ersatzForge](https://github.com/DenOfEquity/ersatzForge) · Oct 26, 2025
@@ -22,7 +23,7 @@ Stable Diffusion WebUI Forge is a platform on top of the original Stable Diffusi
 
 ---
 
-Stable Diffusion web UI
+#### Stable Diffusion web UI
 
 A web interface for Stable Diffusion, implemented using Gradio library.
 
@@ -30,7 +31,7 @@ No longer maintained.
 
 ---
 
-Stable Diffusion WebUI Forge
+#### Stable Diffusion WebUI Forge
 
 Stable Diffusion WebUI Forge is a platform on top of Stable Diffusion WebUI (based on Gradio ) to make development easier, optimize resource management, speed up inference, and study experimental features.
 
@@ -42,9 +43,25 @@ News are moved to this link: Click here to see the News section
 
 ---
 
+#### Stable Diffusion WebUI Forge - Classic
+
+"Classic" mainly serves as an archive for the "previous" version of Forge, which was built on Gradio 3.41.2 before the major changes (see the original announcement) were introduced. Additionally, this fork is focused exclusively on SD1 and SDXL checkpoints, having various optimizations implemented, with the main goal of being the lightest WebUI without any bloatwares.
+
+---
+
+#### 
+
 Forge Neo: https://github.com/Haoming02/sd-webui-forge-classic/tree/neo, from @Haoming02. It is a continuation of Forge2 (so Flux, fp8, gguf, etc) but with more features (wan 2.2, Qwen Image, Nunchaku, etc), aimed on optimizations and new features.
 
 "Neo" mainly serves as an continuation for the "latest" version of Forge, which was built on Gradio 4.40.0 before lllyasviel became too busy... Additionally, this fork is focused on optimization and usability, with the main goal of being the lightest WebUI without any bloatwares.
+
+---
+
+#### Stable Diffusion WebUI Forge/reForge
+
+Stable Diffusion WebUI Forge/reForge is a platform on top of Stable Diffusion WebUI (based on Gradio) to make development easier, optimize resource management, speed up inference, and study experimental features.
+
+Forge/reForge backend removes all WebUI's codes related to resource management and reworked everything. All previous CMD flags like medvram, lowvram, medvram-sdxl, precision full, no half, no half vae, attention_xxx, upcast unet, ... are all REMOVED. Adding these flags will not cause error but they will not do anything now.
 
 ---
 
