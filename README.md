@@ -84,9 +84,14 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
 ```
 At this time, install:
-- SD models (otherwise you'll have to wait while the default models are downloaded)
 - notification sounds
-- extensions if already downloaded
+
+---
+
+
+</details><details><summary>Symlinks</summary>
+
+### Symlinks
 
 After renaming the destination folders:
 ```
@@ -94,20 +99,6 @@ ln -s /Volumes/External/Stable\ Diffusion/models /Users/Main/Applications/stable
 ln -s /Volumes/External/Stable\ Diffusion/models/embeddings /Users/Main/Applications/stable-diffusion-webui/embeddings 
 ln -s /Volumes/External/Stable\ Diffusion/outputs /Users/Main/Applications/stable-diffusion-webui/outputs
 ```
----
-
-### First Run
-```
-cd ~/Applications/stable-diffusion-webui && ./webui.sh
-```
-Check the Python version in the Terminal output — `3.10` is required for ControlNet.
-
----
-
-</details><details><summary>Symlinks</summary>
-
-### Symlinks
-
 The following files are stored in this repo, to make configuration easier:
 - `config.json` - settings
 - `ui-config.json` - settings saved from the Other › Defaults settings tabs
@@ -125,6 +116,15 @@ ln -s "$src/stable-diffusion/aliased files/config.json"     "$dest/stable-diffus
 rm -rf                                                      "$dest/stable-diffusion-webui/ui-config.json" 
 ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
 ```
+---
+
+</details><details><summary>First Run</summary>
+
+### First Run
+```
+cd ~/Applications/stable-diffusion-webui && ./webui.sh
+```
+
 ---
 
 </details><details><summary>Follow Up</summary>
