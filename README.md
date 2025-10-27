@@ -125,6 +125,7 @@ ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffus
 
 ### Extensions
 
+Install from URL then reload UI:
 - https://github.com/Bing-su/adetailer.git
 - https://github.com/adieyal/sd-dynamic-prompts.git
 
@@ -151,4 +152,5 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/features
 https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompt-guide.htm
 
 ---
+
 </details>
