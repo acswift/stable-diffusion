@@ -23,10 +23,6 @@ No longer maintained.
 
 Stable Diffusion WebUI Forge is a platform on top of the original Stable Diffusion WebUI by AUTOMATIC1111, to make development easier, optimize resource management, speed up inference, and study experimental features.
 
-Stable Diffusion WebUI Forge is a platform on top of Stable Diffusion WebUI (based on Gradio ) to make development easier, optimize resource management, speed up inference, and study experimental features.
-
-The name "Forge" is inspired from "Minecraft Forge". This project is aimed at becoming SD WebUI's Forge.
-
 Forge is currently based on SD-WebUI 1.10.1 at this commit. (Because original SD-WebUI is almost static now, Forge will sync with original WebUI every 90 days, or when important fixes.)
 
 - [macOS instructions](https://github.com/lllyasviel/stable-diffusion-webui-forge/issues/2503)
