@@ -105,7 +105,7 @@ The following files are stored in this repo, to make configuration easier:
 - `user.css` - any user-created CSS
 
 ```
-src="/Users/Main/Library/Mobile Documents/com~apple~CloudDocs/Repositories"
+src="/Volumes/External/Repositories"
 dest="/Users/Main/Applications"
 ```
 ```
