@@ -86,8 +86,11 @@ cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-web
 At this time, install:
 - notification sounds
 
----
+**Microsoft edge**
 
+- system & performance › performance
+- "never put these sites to sleep" —› add ip address
+---
 
 </details><details><summary>Symlinks</summary>
 
@@ -116,6 +119,15 @@ ln -s "$src/stable-diffusion/aliased files/config.json"     "$dest/stable-diffus
 rm -rf                                                      "$dest/stable-diffusion-webui/ui-config.json" 
 ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
 ```
+---
+
+</details><details><summary>Extensions</summary>
+
+### Extensions
+
+- https://github.com/Bing-su/adetailer.git
+- https://github.com/adieyal/sd-dynamic-prompts.git
+
 ---
 
 </details><details><summary>First Run</summary>
