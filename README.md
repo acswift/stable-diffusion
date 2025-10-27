@@ -87,6 +87,16 @@ At this time, install:
 - SD models (otherwise you'll have to wait while the default models are downloaded)
 - notification sounds
 - extensions if already downloaded
+
+After renaming the destination folders:
+```
+ln -s /Volumes/External/Stable\ Diffusion/models /Users/Main/Applications/stable-diffusion-webui/models
+ln -s /Volumes/External/Stable\ Diffusion/models/embeddings /Users/Main/Applications/stable-diffusion-webui/embeddings 
+ln -s /Volumes/External/Stable\ Diffusion/outputs /Users/Main/Applications/stable-diffusion-webui/outputs
+```
+---
+
+### First Run
 ```
 cd ~/Applications/stable-diffusion-webui && ./webui.sh
 ```
