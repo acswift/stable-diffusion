@@ -144,6 +144,39 @@ python --version                # check
 ```
 ---
 
+* * *
+
+**fix runtime errors**
+
+cd ~/Applications/stable-diffusion-webui-forge
+
+```
+# 1. svglib install failure (pycairo build error)
+brew install pkg-config cairo cmake
+
+source venv/bin/activate
+pip install svglib
+pip install joblib
+```
+
+**fix errors two**
+```
+brew install xz
+
+asdf uninstall python 3.10.14
+export LDFLAGS="-L/opt/homebrew/opt/xz/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/xz/include"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/xz/lib/pkgconfig"
+asdf install python 3.10.14
+
+cd ~/Applications/stable-diffusion-webui-forge
+rm -rf venv
+python -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+./webui.sh
+```
+
 </details><details><summary>Symlinks</summary>
 
 ### Symlinks
