@@ -6,12 +6,12 @@
 - per-image defaults are stored in `ui-config.json`
 
 ----
-#### saving images
+#### saving images / saving images/grids
 
-- saving images/grids: change format to jpg
-- change JPG quality to 95%
-- change width/height limit to 5000
-- check "save incomplete images" (at bottom)
+- File format for images: `jpg`
+- Quality for saved jpeg and avif images `95%`
+- Width/height limit for the above option, in pixels: `5000`
+- Save incomplete images: `√` (at bottom)
 
 ----
 #### stable diffusion
