@@ -116,6 +116,13 @@ Install ASDF:
 brew install asdf
 ```
 Add ASDF to the user's profile and restart the session:
+
+# integrate into following command:
+```
+. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/completions/asdf.bash"
+
+export PATH="$HOME/.asdf/shims:$HOME/.asdf/bin:$PATH"
 ```
 { 
   echo -e ". $(brew --prefix asdf)/libexec/asdf.sh"
