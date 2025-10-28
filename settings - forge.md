@@ -11,14 +11,15 @@
 - File format for images: `jpg`
 - Quality for saved jpeg and avif images `95%`
 - Width/height limit for the above option, in pixels: `5000`
-- Save incomplete images: `√` (at bottom)
+- Save incomplete images (at bottom): `√`
 
 ----
 #### stable diffusion
 
-- sampler parameters: hide all samplers but DPM++ 3M SDE
-- stable diffusion: check "enable comments" (already checked)
-- vae: fixFP16ErrorsSDXLLowerMemoryUse_v10.safetensors
+- sampler parameters, hide samplers: check all but `DPM++ 3M SDE`
+- stable diffusion, emphasis mode: `No norm` 
+- stable diffusion, enable comments: `√`
+- vaa, VAE type for encode: `TAESD` (being tested)
 
 ----
 #### user interface
