@@ -119,13 +119,31 @@ git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.0
 Add ASDF to the user's profile and restart the session:
 ```
 { 
-  echo '. "$HOME/.asdf/asdf.sh"'
-  echo '. "$HOME/.asdf/completions/asdf.bash"'
+  echo 'source "$HOME/.asdf/asdf.sh"'
+  echo 'source "$HOME/.asdf/completions/asdf.bash"'
   cat ~/.profile
 } > ~/.profile.tmp && mv ~/.profile.tmp ~/.profile
 
 source ~/.profile
 ```
+Make sure Python plugin is installed:
+```
+asdf plugin add python
+```
+```
+
+# install Python 3.10.14
+asdf install python 3.10.14
+
+# or for just your Forge project
+cd ~/Applications/stable-diffusion-webui-forge
+asdf local python 3.10.14
+
+# check
+python --version
+```
+
+
 ---
 
 </details><details><summary>Symlinks</summary>
