@@ -85,14 +85,16 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 
 ### Installation
 
-> These instructions use bash
+> These instructions use bash (macOS uses the ZSH shell by default)
 
 ```
-chsh -s /bin/bash # change to bash
+chsh -s /bin/bash # change to bash before continuing
 ```
 ```
-chsh -s /bin/zsh # change back to bash when done
+chsh -s /bin/zsh # change back to ZSH when done
 ```
+These instructions assume that you are familiar with Git and Github.
+
 * * *
 
 We will install Forge in the user's applications folder.
@@ -106,6 +108,19 @@ Check if `brew` is installed:
 brew --version
 ```
 If necessary, go to [brew.sh](https://brew.sh/), copy the prompt and paste it into Terminal.
+
+* * *
+
+Install ASDF:
+```
+cd
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.0
+echo -e '\n. "$HOME/.asdf/asdf.sh"\n. "$HOME/.asdf/completions/asdf.bash"' >> ~/.profile
+```
+```
+vi ~/.profile # move from end to beginning
+source ~/.profile
+```
 ---
 
 </details><details><summary>Symlinks</summary>
