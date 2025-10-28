@@ -115,10 +115,15 @@ Install ASDF:
 ```
 cd
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.0
-echo -e '\n. "$HOME/.asdf/asdf.sh"\n. "$HOME/.asdf/completions/asdf.bash"' >> ~/.profile
 ```
 ```
-vi ~/.profile # move from end to beginning
+{ 
+  echo '. "$HOME/.asdf/asdf.sh"'
+  echo '. "$HOME/.asdf/completions/asdf.bash"'
+  cat ~/.profile
+} > ~/.profile.tmp && mv ~/.profile.tmp ~/.profile
+```
+```
 source ~/.profile
 ```
 ---
