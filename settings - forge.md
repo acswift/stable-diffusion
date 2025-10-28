@@ -19,7 +19,7 @@
 - sampler parameters, hide samplers: check all but `DPM++ 3M SDE`
 - stable diffusion, emphasis mode: `No norm` 
 - stable diffusion, enable comments: `√`
-- vaa, VAE type for encode: `TAESD` (being tested)
+- vae, VAE type for encode: `TAESD` (being tested)
 
 ---
 ### user interface
@@ -35,7 +35,7 @@
 
 **other:**
 - prompt editing, Alt+left/right moves prompt elements: `uncheck`
-- settings in UI: `emphasis`, `notification_volume`
+- settings in UI: `emphasis`
 - UI alternatives, Don't Interrupt in the middle: `uncheck`
 - user interface, quicksettings list: `do_not_show_images`, `live_previews_enable`
 - user interface, UI item order for txt2img/img2img tabs: `seed`
