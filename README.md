@@ -185,6 +185,15 @@ ln -s "$src/notification sounds/notification.mp3" "$dest/notification.mp3"
 ```
 ---
 
+</details><details><summary>First Run</summary>
+
+### First Run
+```
+cd ~/Applications/stable-diffusion-webui && ./webui.sh
+```
+
+---
+
 </details><details><summary>Extensions</summary>
 
 ### Extensions
@@ -192,15 +201,6 @@ ln -s "$src/notification sounds/notification.mp3" "$dest/notification.mp3"
 Install from URL then reload UI:
 - https://github.com/Bing-su/adetailer.git
 - https://github.com/adieyal/sd-dynamic-prompts.git
-
----
-
-</details><details><summary>First Run</summary>
-
-### First Run
-```
-cd ~/Applications/stable-diffusion-webui && ./webui.sh
-```
 
 ---
 
