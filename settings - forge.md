@@ -24,10 +24,16 @@
 ----
 #### user interface
 
-- live previews: format jpg, uncheck "Show previews of all images generated in a batch as a grid"
-- live previews: display period 2, method TAESD, update period 250ms
-- live previews: check "return image with chosen...", 
-- live previews: check "Show Live preview in full page image viewer"
+**live previews**
+- Live preview file format: `jpg`
+- Show previews of all images generated in a batch as a grid: `uncheck`
+- Live preview display period (in sampling steps: `2`
+- Live preview method: `TAESD`
+- Progressbar and preview update period: `250`
+- Return image with chosen live preview: `√`
+- Show Live preview in full page image viewer: `√`
+
+**other:**
 - prompt editing: uncheck "Alt+left/right moves prompt elements"
 - settings in UI: emphasis, notif. volume
 - NOT UI alternatives: hires fix: show checkpoint & sampler
