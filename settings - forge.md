@@ -34,12 +34,11 @@
 - Show Live preview in full page image viewer: `√`
 
 **other:**
-- prompt editing: uncheck "Alt+left/right moves prompt elements"
-- settings in UI: emphasis, notif. volume
-- NOT UI alternatives: hires fix: show checkpoint & sampler
-- UI alternatives: hires fix: show prompt
-- UI alternatives: uncheck "don't interrupt"
-- user interface: sd_model_checkpoint, do not show images, live previews enable
+- prompt editing, Alt+left/right moves prompt elements: `uncheck`
+- settings in UI: `emphasis`, `notification_volume`
+- UI alternatives, Don't Interrupt in the middle: `uncheck`
+- user interface, quicksettings list: `do_not_show_images`, `live_previews_enable`
+- user interface, UI item order for txt2img/img2img tabs: `seed`
 
 ----
 #### system
