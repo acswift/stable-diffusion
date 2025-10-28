@@ -96,15 +96,24 @@ git clone git@github.com:lllyasviel/stable-diffusion-webui-forge.git
 
 ### Symlinks
 
+The point is to keep anything that's added to the program folder out of the program folder.
+
+This way, it's possible to share models etc., between different installations.
+
+**Models**
+
 After renaming the destination folders:
 ```
 ln -s /Volumes/External/Stable\ Diffusion/models /Users/Main/Applications/stable-diffusion-webui/models
 ln -s /Volumes/External/Stable\ Diffusion/models/embeddings /Users/Main/Applications/stable-diffusion-webui/embeddings 
 ln -s /Volumes/External/Stable\ Diffusion/outputs /Users/Main/Applications/stable-diffusion-webui/outputs
 ```
+
+**Configuration**
+
 The following files are stored in this repo, to make configuration easier:
 - `config.json` - settings
-- `ui-config.json` - settings saved from the Other › Defaults settings tabs
+- `ui-config.json` - image-specific settings (saved from Other › Defaults)
 - `user.css` - any user-created CSS
 
 ```
@@ -119,6 +128,10 @@ ln -s "$src/stable-diffusion/aliased files/config.json"     "$dest/stable-diffus
 rm -rf                                                      "$dest/stable-diffusion-webui/ui-config.json" 
 ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
 ```
+**Notification Sound**
+
+At this time, install:
+- notification sounds
 ---
 
 </details><details><summary>Extensions</summary>
@@ -157,8 +170,6 @@ https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompt-guide.ht
 
 ---
 
-At this time, install:
-- notification sounds
 
 **Microsoft edge**
 
