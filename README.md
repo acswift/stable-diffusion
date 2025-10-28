@@ -206,7 +206,7 @@ ln -s "$src/aliases - forge/config.json"     "$dest/config.json"
 rm -rf                                       "$dest/ui-config.json" 
 ln -s "$src/aliases - forge/ui-config.json"  "$dest/ui-config.json" 
 ```
-**Models**
+**Models & Extensions**
 
 ```
 src="/Volumes/External/Stable Diffusion"
@@ -219,6 +219,8 @@ rm -rf                          "$dest/embeddings"
 ln -s "$src/models/embeddings"  "$dest/embeddings"
 rm -rf                          "$dest/outputs"
 ln -s "$src/outputs"            "$dest/outputs"
+rm -rf                          "$dest/extensions"
+ln -s "$src/extensions"         "$dest/extensions"
 ```
 **Notification Sound**
 ```
