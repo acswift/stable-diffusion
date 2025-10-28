@@ -148,9 +148,9 @@ python --version                # check
 
 **fix runtime errors**
 
+```
 cd ~/Applications/stable-diffusion-webui-forge
 
-```
 # 1. svglib install failure (pycairo build error)
 brew install pkg-config cairo cmake
 
