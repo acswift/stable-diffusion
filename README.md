@@ -178,11 +178,11 @@ ln -s "$src/models/embeddings"  "$dest/embeddings"
 rm -rf                          "$dest/outputs"
 ln -s "$src/outputs"            "$dest/outputs"
 ```
-
 **Notification Sound**
-
-At this time, install:
-- notification sounds
+```
+rm -rf                                            "$dest/notification.mp3"
+ln -s "$src/notification sounds/notification.mp3" "$dest/notification.mp3"
+```
 ---
 
 </details><details><summary>Extensions</summary>
