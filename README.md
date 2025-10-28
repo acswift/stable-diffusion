@@ -145,21 +145,6 @@ The point is to keep anything that's added to the program folder out of the prog
 
 This way, it's possible to share models etc., between different installations.
 
-**Models**
-
-```
-src="/Volumes/External/Stable Diffusion"
-dest="/Users/Main/Applications/stable-diffusion-webui-forge"
-```
-```
-rm -rf                          "$dest/models"
-ln -s "$src/models"             "$dest/models"
-rm -rf                          "$dest/embeddings"
-ln -s "$src/models/embeddings"  "$dest/embeddings"
-rm -rf                          "$dest/outputs"
-ln -s "$src/outputs"            "$dest/outputs"
-```
-
 **Configuration**
 
 The following files are stored in this repo, to make configuration easier:
@@ -179,6 +164,21 @@ ln -s "$src/stable-diffusion/aliased files/config.json"     "$dest/stable-diffus
 rm -rf                                                      "$dest/stable-diffusion-webui/ui-config.json" 
 ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
 ```
+**Models**
+
+```
+src="/Volumes/External/Stable Diffusion"
+dest="/Users/Main/Applications/stable-diffusion-webui-forge"
+```
+```
+rm -rf                          "$dest/models"
+ln -s "$src/models"             "$dest/models"
+rm -rf                          "$dest/embeddings"
+ln -s "$src/models/embeddings"  "$dest/embeddings"
+rm -rf                          "$dest/outputs"
+ln -s "$src/outputs"            "$dest/outputs"
+```
+
 **Notification Sound**
 
 At this time, install:
