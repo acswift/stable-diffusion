@@ -153,16 +153,16 @@ The following files are stored in this repo, to make configuration easier:
 - `user.css` - any user-created CSS
 
 ```
-src="/Volumes/External/Repositories"
-dest="/Users/Main/Applications"
+src="/Volumes/External/Repositories/stable-diffusion"
+dest="/Users/Main/Applications/stable-diffusion-webui-forge"
 ```
 ```
-rm -rf                                                      "$dest/stable-diffusion-webui/user.css"
-ln -s "$src/stable-diffusion/aliased files/user.css"        "$dest/stable-diffusion-webui/user.css"
-rm -rf                                                      "$dest/stable-diffusion-webui/config.json" 
-ln -s "$src/stable-diffusion/aliased files/config.json"     "$dest/stable-diffusion-webui/config.json" 
-rm -rf                                                      "$dest/stable-diffusion-webui/ui-config.json" 
-ln -s "$src/stable-diffusion/aliased files/ui-config.json"  "$dest/stable-diffusion-webui/ui-config.json" 
+rm -rf                                       "$dest/user.css"
+ln -s "$src/aliases - forge/user.css"        "$dest/user.css"
+rm -rf                                       "$dest/config.json" 
+ln -s "$src/aliases - forge/config.json"     "$dest/config.json" 
+rm -rf                                       "$dest/ui-config.json" 
+ln -s "$src/aliases - forge/ui-config.json"  "$dest/ui-config.json" 
 ```
 **Models**
 
