@@ -3,13 +3,7 @@
 
 *Updated 27 October, 2025 · Toulouse*
 
-### Stable Diffusion WebUI Forge
-
-[Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) is the only stable and maintained version of the SD Web UI that is compatible with macOS.
-
----
-<details><summary>SD Web UI Versions</summary>
-
+<details><summary></summary>
 ### SD Web UI Versions
 
 ---
@@ -84,7 +78,9 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 
 ---
 
-</details><details><summary>Installation</summary>
+</details>
+
+<details><summary>Installation</summary>
 
 ### Installation
 ```
