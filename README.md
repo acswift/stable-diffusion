@@ -113,37 +113,28 @@ If necessary, go to [brew.sh](https://brew.sh/), copy the prompt and paste it in
 
 Install ASDF:
 ```
-cd
-git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.0
+brew install asdf
 ```
 Add ASDF to the user's profile and restart the session:
 ```
 { 
-  echo 'source "$HOME/.asdf/asdf.sh"'
-  echo 'source "$HOME/.asdf/completions/asdf.bash"'
+  echo -e ". $(brew --prefix asdf)/libexec/asdf.sh"
   cat ~/.profile
 } > ~/.profile.tmp && mv ~/.profile.tmp ~/.profile
-
 source ~/.profile
+asdf version
 ```
 Make sure Python plugin is installed:
 ```
 asdf plugin add python
 ```
 ```
-
-# install Python 3.10.14
-asdf install python 3.10.14
-
-# or for just your Forge project
 cd ~/Applications/stable-diffusion-webui-forge
-asdf local python 3.10.14
 
-# check
-python --version
+asdf install python 3.10.14     # install Python 3.10.14, takes a long time
+asdf local python 3.10.14       # just your Forge project
+python --version                # check
 ```
-
-
 ---
 
 </details><details><summary>Symlinks</summary>
