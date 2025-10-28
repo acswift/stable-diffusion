@@ -57,7 +57,6 @@
 - adetailer, max tabs: `1`
 - adetailer, sort bounding boxes by: `Position (center to edge)`
 - adetailer, try to match inpainting size to bounding box size: `Free`
-- dynamic prompts: String to use as wrap for parser wildcard, .e.g __wildcard__
 
 ---
 ### Defaults
