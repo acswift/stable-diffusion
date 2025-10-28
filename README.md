@@ -10,10 +10,6 @@
 ---
 <details><summary>SD Web UI Versions</summary>
 
-### SD Web UI Versions
-
----
-
 #### Stable Diffusion web UI
 
 - [Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) · Jul 27, 2024
@@ -87,7 +83,11 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 </details><details><summary>Installation</summary>
 
 ### Installation
+
+We will install Forge in the user's applications folder.
+
 ```
+mkdir -p ~/Applications
 cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
 ```
 At this time, install:
