@@ -5,24 +5,24 @@
 
 - per-image defaults are stored in `ui-config.json`
 
-----
-#### saving images / saving images/grids
+---
+### saving images / saving images/grids
 
 - File format for images: `jpg`
 - Quality for saved jpeg and avif images `95%`
 - Width/height limit for the above option, in pixels: `5000`
 - Save incomplete images (at bottom): `√`
 
-----
-#### stable diffusion
+---
+### stable diffusion
 
 - sampler parameters, hide samplers: check all but `DPM++ 3M SDE`
 - stable diffusion, emphasis mode: `No norm` 
 - stable diffusion, enable comments: `√`
 - vaa, VAE type for encode: `TAESD` (being tested)
 
-----
-#### user interface
+---
+### user interface
 
 **live previews**
 - Live preview file format: `jpg`
@@ -40,32 +40,28 @@
 - user interface, quicksettings list: `do_not_show_images`, `live_previews_enable`
 - user interface, UI item order for txt2img/img2img tabs: `seed`
 
-----
-#### system
+---
+### system
 
-- system: "disable" Automatically open webui in browser on startup
+- system: Automatically open webui in browser on startup: `Disable`
 
-----
-#### postprocessing
+---
+### postprocessing
 
-- postprocessing: enable postprocessing: upscaling
-- upscaling: upscaler for img2img: 4xUltrasharp_4xUltrasharpV10
+- postprocessing, Enable postprocessing operations in txt2img and img2img tabs: `Upscale`
+- upscaling, Upscaler for img2img: `4xUltrasharp_4xUltrasharpV10`
 
-----
-#### uncategorized
+---
+### uncategorized
 
-- adetailer: max tabs 1
-- adetailer: max tabs 1
-- adetailer: sort bounding boxes by: position
-- adetailer: try to match inpainting size to bounding box size: free
+- adetailer, max tabs: `1`
+- adetailer, sort bounding boxes by: `Position (center to edge)`
+- adetailer, try to match inpainting size to bounding box size: `Free`
 - dynamic prompts: String to use as wrap for parser wildcard, .e.g __wildcard__
 
-----
-#### Defaults
+---
+### Defaults
 
 - save defaults (stored in ui-config.json)
 
-
-
-
-
+---
