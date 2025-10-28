@@ -116,14 +116,14 @@ Install ASDF:
 cd
 git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.18.0
 ```
+Add ASDF to the user's profile and restart the session:
 ```
 { 
   echo '. "$HOME/.asdf/asdf.sh"'
   echo '. "$HOME/.asdf/completions/asdf.bash"'
   cat ~/.profile
 } > ~/.profile.tmp && mv ~/.profile.tmp ~/.profile
-```
-```
+
 source ~/.profile
 ```
 ---
