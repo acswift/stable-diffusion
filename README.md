@@ -3,11 +3,12 @@
 
 *Updated 27 October, 2025 · Toulouse*
 
-### Stable Diffusion WebUI Forge
+### Stable Diffusion WebUI Forge on Apple Silicon
 
 [Stable Diffusion WebUI Forge](https://github.com/lllyasviel/stable-diffusion-webui-forge) is the only stable and maintained version of the SD Web UI that is compatible with macOS.
 
 ---
+
 <details><summary>SD Web UI Versions</summary>
 
 #### Stable Diffusion web UI
@@ -84,12 +85,27 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 
 ### Installation
 
+> These instructions use bash
+
+```
+chsh -s /bin/bash # change to bash
+```
+```
+chsh -s /bin/zsh # change back to bash when done
+```
+* * *
+
 We will install Forge in the user's applications folder.
 
 ```
 mkdir -p ~/Applications && cd ~/Applications
 git clone git@github.com:lllyasviel/stable-diffusion-webui-forge.git
 ```
+Check if `brew` is installed:
+``` 
+brew --version
+```
+If necessary, go to [brew.sh](https://brew.sh/), copy the prompt and paste it into Terminal.
 ---
 
 </details><details><summary>Symlinks</summary>
