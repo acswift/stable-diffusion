@@ -147,11 +147,17 @@ This way, it's possible to share models etc., between different installations.
 
 **Models**
 
-After renaming the destination folders:
 ```
-ln -s /Volumes/External/Stable\ Diffusion/models /Users/Main/Applications/stable-diffusion-webui/models
-ln -s /Volumes/External/Stable\ Diffusion/models/embeddings /Users/Main/Applications/stable-diffusion-webui/embeddings 
-ln -s /Volumes/External/Stable\ Diffusion/outputs /Users/Main/Applications/stable-diffusion-webui/outputs
+src="/Volumes/External/Stable Diffusion"
+dest="/Users/Main/Applications/stable-diffusion-webui-forge"
+```
+```
+rm -rf                          "$dest/models"
+ln -s "$src/models"             "$dest/models"
+rm -rf                          "$dest/embeddings"
+ln -s "$src/models/embeddings"  "$dest/embeddings"
+rm -rf                          "$dest/outputs"
+ln -s "$src/outputs"            "$dest/outputs"
 ```
 
 **Configuration**
