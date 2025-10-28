@@ -87,16 +87,9 @@ Notes on how to get the best results from Stable Diffusion using Automatic1111 o
 We will install Forge in the user's applications folder.
 
 ```
-mkdir -p ~/Applications
-cd ~/Applications && git clone git@github.com:AUTOMATIC1111/stable-diffusion-webui.git
+mkdir -p ~/Applications && cd ~/Applications
+git clone git@github.com:lllyasviel/stable-diffusion-webui-forge.git
 ```
-At this time, install:
-- notification sounds
-
-**Microsoft edge**
-
-- system & performance › performance
-- "never put these sites to sleep" —› add ip address
 ---
 
 </details><details><summary>Symlinks</summary>
@@ -161,3 +154,13 @@ https://www.aiarty.com/stable-diffusion-prompts/stable-diffusion-prompt-guide.ht
 ---
 
 </details>
+
+---
+
+At this time, install:
+- notification sounds
+
+**Microsoft edge**
+
+- system & performance › performance
+- "never put these sites to sleep" —› add ip address
